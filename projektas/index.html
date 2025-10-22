@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="lt">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pagrindinis | Mano svetainė</title>
+    <meta name="description" content="Trumpas aprašymas puslapiui.">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/src/main.css">
+    <script type="module" src="/src/main.js" defer></script>
+</head>
+
+<body class="min-h-screen bg-gray-50 text-gray-900">
+    <header class="bg-white border-b">
+        <nav class="max-w-5xl mx-auto p-4 flex gap-4 items-center">
+            <img src="public/img/logo-jugila.png" alt="logo-jugila" class="w-80 h-30">
+
+            <a href="/index.html" class="hover:underline">Pagrindinis</a>
+            <a href="/about.html" class="hover:underline">Apie</a>
+            <a href="/contact.html" class="hover:underline">Kontaktai</a>
+            <a href="/services.html" class="hover:underline">Paslaugos</a>
+        </nav>
+    </header>
+
+    <main class="max-w-5xl mx-auto p-6">
+        <h1 class="text-3xl font-bold">Sveiki!</h1>
+        <p class="mt-2">Tai tavo pirmas Tailwind + Vite projektas.</p>
+        <a href="/contact.html" class="btn-primary inline-block mt-4">Rašyk man</a>
+        <div class="max-w-xl mx-auto p-6">
+            <button id="dropdownBtn" data-dropdown-toggle="dropdown" class="px-4 py-2 bg-blue-600 text-white rounded">
+                Meniu
+            </button>
+            <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
+                <ul class="py-2 text-sm text-gray-700" aria-labelledby="dropdownBtn">
+                    <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Veiksmas 1</a></li>
+                    <li><a href="#" class="block px-4 py-2 hover:bg-gray-100">Veiksmas 2</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
