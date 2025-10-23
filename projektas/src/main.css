@@ -1,6 +1,30 @@
 @import "tailwindcss";
 
 /* papildomas CSS */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: oklch(0.27 0 0);
+  max-height: 100vh;
+}
+
 .btn-primary {
   @apply bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700;
 }
+
+.btn-contact {
+  @apply px-5 py-2 uppercase rounded-lg text-[16px] font-medium text-amber-300 bg-transparent border-2 border-amber-300 
+        transition duration-500 ease-in-out cursor-pointer select-none;
+}
+.btn-contact:hover,
+.btn-contact:focus {
+  @apply text-white bg-[#e7cc34] border-[#e7cc34];
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff;
+  box-shadow: 0 0 5px #e7cc34, 0 0 20px #e7cc34, 0 0 50px #e7cc34, 0 0 100px #e7cc34;
+}
+
+
+
