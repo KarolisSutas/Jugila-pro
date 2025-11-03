@@ -13,10 +13,10 @@
 
 <body>
     <header>
-        <nav class="bg-zinc-900/50 fixed w-full z-20 top-0 start-0">
-            <div class="max-w-screen-xl flex flex-wrap items-center justify-between p-4">
+        <nav class="fixed w-full z-20 top-0 start-0">
+            <div class="max-w-7xl flex flex-wrap items-center justify-between p-4">
                 <a href="/index.html" class="flex items-center space-x-3 rtl:space-x-reverse h-15">
-                    <img src="public/img/logo-jugila.png" class="h-30 w-auto" alt="Jugila Logo">
+                    <img src="/img/logo-jugila.png" class="h-30 w-auto" alt="Jugila Logo">
                 </a>
                 <div class="flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
                     <button id="btn-contact" class="btn-contact">
@@ -58,12 +58,104 @@
                 </div>
             </div>
         </nav>
+        <button id="scrollTopBtn" title="Į viršų">↑</button> 
     </header>
 
-    <main class="w-full mt-10 p-6 text-white">
-        <h1 class="text-3xl font-bold mt-10">Sveiki!</h1>
-        <p class="mt-2">Tai tavo pirmas Tailwind + Vite projektas.</p>
-        <a href="/contact.html" class="btn-primary inline-block mt-4">Rašyk man</a>
+    <main class="w-full text-white">
+
+        <section class="hero">
+            <span class="bg bg1"></span>
+            <span class="bg bg2"></span>
+            <span class="bg bg3"></span>
+
+            <div class="hero-content">
+                <span class="hero-eyebrow">Mes tikime kokybe</span>
+                <h1 class="hero-title">
+                    30 metų 
+                    <span class="highlight">patirtis</span> ir <span class="highlight">tikslumas</span>
+                    žemės kasimo darbuose
+                </h1>
+                <p class="hero-sub">
+                    Atliekame visus žemės kasimo, lyginimo ir planiravimo darbus moderniu mini ekskavatoriumi Yanmar SV26.
+                    <span class="highlight">Patikimas partneris žemės darbams Utenos apskrityje!</span>
+                </p>
+                <a href="#services" class="hero-btn">Peržiūrėti paslaugas</a>
+            </div>
+            
+            <!-- scroll hint -->
+            <span class="scroll-down">Į apačią</span>
+        </section>
+
+        <section class="m-25"></section>
+
+        <!-- <div class="cube-container mt-16">
+            <div class="cube">
+                <div class="face front">
+                    <img src="/img/logo-jugila.png" alt="Jugila Logo">
+                </div>
+                <div class="face back">
+                    <img src="/img/logo-jugila.png" alt="Jugila Logo">
+                </div>
+                <div class="face right">
+                    <img src="/img/logo-jugila.png" alt="Jugila Logo">
+                </div>
+                <div class="face left">
+                    <img src="/img/logo-jugila.png" alt="Jugila Logo">
+                </div>
+                <div class="face top">
+                    <img src="/img/logo-jugila.png" alt="Jugila Logo">
+                </div>
+                <div class="face bottom">
+                    <img src="/img/logo-jugila.png" alt="Jugila Logo">
+                </div>
+            </div>
+        </div> -->
+
+        <section class="about-intro">
+            <div class="about-container">
+                <div class="about-text">
+                    <h2>DIRBAME <span class="highlight">AUKŠČIAUSIU LYGIU</span></h2>
+        
+                    <p class="about-lead">
+                        <strong>„Jugila“</strong> – tai daugiau nei 30 metų patirties turinti įmonė,
+                        atliekanti žemės kasimo, lyginimo ir planiravimo darbus visoje Utenos apskrityje.
+                        Mūsų tikslas – užtikrinti kokybę, tikslumą ir patikimumą kiekviename projekte.
+                    </p>
+        
+                    <p class="about-desc">
+                        Dirbame su moderniu mini ekskavatoriumi <strong>Yanmar SV26</strong>, kuris leidžia
+                        pasiekti aukštą darbo tikslumą net sudėtingose vietose. Mūsų komandos patirtis ir
+                        atsakomybė leidžia įgyvendinti klientų vizijas efektyviai ir laiku.
+                    </p>
+        
+                    <a href="/about.html" class="about-btn">Sužinoti daugiau apie mus</a>
+                </div>
+        
+                <div class="about-image">
+                    <img src="/img/darbai.jpg" alt="Jugila – žemės kasimo darbai">
+                </div>
+            </div>
+        </section>
+    
+        <section id="services" class="mt-16 mb-32 p-8 rounded-lg">
+            <h2 class="text-2xl font-semibold mb-6">Mūsų paslaugos</h2>
+            <ul class="space-y-4">
+                <li class="p-4 bg-gray-700 rounded-lg">
+                    <h3 class="text-xl font-bold mb-2">Žemės kasimo darbai</h3>
+                    <p>Profesionalūs žemės kasimo darbai naudojant modernų mini ekskavatorių Yanmar SV26.</p>
+                </li>
+                <li class="p-4 bg-gray-700 rounded-lg">
+                    <h3 class="text-xl font-bold mb-2">Teritorijų lyginimas</h3>
+                    <p>Efektyvus teritorijų lyginimas ir paruošimas statyboms ar sodinimui.</p>
+                </li>
+                <li class="p-4 bg-gray-700 rounded-lg">
+                    <h3 class="text-xl font-bold mb-2">Planiravimo darbai</h3>
+                    <p>Tikslus žemės planiravimas pagal jūsų poreikius ir projektus.</p>
+                </li>
+            </ul>   
+            <!-- tavo slideshow ar kortelės -->
+        </section>          
+    
     </main>
 
 </body>
