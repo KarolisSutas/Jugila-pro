@@ -59,7 +59,7 @@ nav.hidden {
 }
 
 #scrollTopBtn:hover {
-  background-color: #f5cd13;
+  background-color: #f5cd20;
   box-shadow: 0 0 12px rgba(255, 230, 138, 0.6);
 }
 
@@ -254,7 +254,6 @@ nav.hidden {
   align-items: center;
   gap: .35rem;
   z-index: 2;
-  cursor: pointer;
 }
 
 .scroll-down::after {

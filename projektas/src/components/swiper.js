@@ -1,4 +1,3 @@
-// src/components/swiper.js
 export function initSwiper() {
     const slider = document.querySelector('[data-slider="projects"]');
     if (!slider) return;
@@ -205,17 +204,19 @@ export function initSwiper() {
             next();
         }, state.autoplayMs);
     }
+
     function stopAutoplay() {
         if (!state.autoplayId) return;
         clearInterval(state.autoplayId);
         state.autoplayId = null;
     }
+
     function restartAutoplay() {
         stopAutoplay();
         startAutoplay();
     }
 
-    // --- 8. eventai ---
+      // --- 8. eventai ---
     nextBtn?.addEventListener('click', () => {
         next();
         restartAutoplay();
@@ -225,8 +226,24 @@ export function initSwiper() {
         restartAutoplay();
     });
 
+    // sustabdom ir ant sliderio...
     slider.addEventListener('mouseenter', stopAutoplay);
     slider.addEventListener('mouseleave', startAutoplay);
+
+    // ...ir ANT KIEKVIENOS kortelės / overlay
+    const cards = slider.querySelectorAll('.project-card');
+    cards.forEach((card) => {
+        card.addEventListener('mouseenter', stopAutoplay);
+        card.addEventListener('mouseleave', startAutoplay);
+
+        // jeigu overlay viduj turi nuorodą / mygtuką:
+        const meta = card.querySelector('.project-meta');
+        if (meta) {
+            meta.addEventListener('mouseenter', stopAutoplay);
+            meta.addEventListener('mouseleave', startAutoplay);
+        }
+    });
+
     window.addEventListener('resize', layout);
 
     // --- 9. init ---

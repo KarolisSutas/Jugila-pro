@@ -13,7 +13,7 @@ export function initScrollReveal() {
             });
         },
         {
-            threshold: 0.25, // kai 25% sekcijos matosi ekrane
+            threshold: 0.30, // kai 25% sekcijos matosi ekrane
         }
     );
 
