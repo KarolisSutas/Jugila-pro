@@ -7,7 +7,7 @@
 
 body {
   background: oklch(0.27 0 0);
-  max-height: 100vh;
+  min-height: 100vh;
 }
 
 /* ====== NAV STILIAI ====== */
@@ -469,3 +469,217 @@ nav.hidden {
     transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
   }
 }
+
+/* ===== PROJECTS SECTION ===== */
+.projects-section {
+  color: #fff;
+  padding-bottom: 4rem;
+  /* nebedarom 100vw ir margin-left: calc(50% - 50vw); 
+     tegul seka normaliu puslapio pločiu */
+}
+
+/* viršus (TITLE + link) – siauras kaip ir buvo */
+.projects-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-bottom: 1px solid #facc13;
+  padding: 0 1.5rem 1rem;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+
+.projects-head .eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: .75rem;
+}
+
+.projects-head h2 {
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  text-transform: uppercase;
+}
+
+.projects-all {
+  color: #facc13;
+  text-decoration: none;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+/* ===== SLIDERIS ===== */
+.projects-slider {
+  position: relative;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 12px;          /* ČIA: vienodas kairė/dešinė */
+}
+
+/* langas, kuriame matosi kortelės */
+.projects-slider .slider-window {
+  overflow: hidden;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* takelis – JS jam dės transformus ir gap’us */
+.projects-slider .slider-track {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  will-change: transform;
+  transition: transform .45s ease;
+}
+
+/* ===== PROJECT CARD ===== */
+.project-card {
+  margin-top: 15px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  border-bottom: 3px solid #facc13;
+  background: #222;
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.project-card img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+  transition: transform .6s ease, filter .6s ease;
+}
+
+/* Slankus tekstas (nematomas iki hover) */
+.project-card .project-meta {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 1rem 1.25rem 2.5rem;
+  background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,.85) 80%, rgba(0,0,0,1) 100%);
+  color: #fff;
+  transform: translateY(100%);
+  transition: transform .4s ease;
+}
+
+/* Teksto stiliai */
+.project-meta .tag {
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+  color: #facc15;
+  margin-bottom: 0.35rem;
+  text-transform: uppercase;
+}
+.project-meta .title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+.project-meta .desc {
+  font-size: 0.9rem;
+  color: #ddd;
+  line-height: 1.3;
+  margin-bottom: 0.75rem;
+}
+
+/* Rodyklė (Level10 stilius) */
+.project-meta .arrow-btn {
+  position: absolute;
+  bottom: 1rem;
+  right: 1.1rem;
+  background: none;
+  border: none;
+  color: #facc13;
+  font-size: 1.9rem;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform .2s ease, color .2s ease;
+}
+.project-meta .arrow-btn:hover {
+  transform: translateX(4px);
+  color: #facc13ee;
+}
+
+/* --- Hover efektas --- */
+.project-card:hover img {
+  transform: scale(1.05);
+  filter: brightness(0.85);
+}
+
+.project-card:hover .project-meta {
+  transform: translateY(0);
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 10px #facc13;
+}
+
+/* slider rodyklės */
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(17,17,17,.7);
+  border: 1px solid #facc13;
+  color: #fff;
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  z-index: 5;
+  transition: background .2s;
+}
+
+/* paliekam vietos nuo kraštų, kad nepjaustytų kortelės */
+.slider-btn.prev {
+  left: 1rem;
+}
+.slider-btn.next {
+  right: 1rem;
+}
+
+.slider-btn:hover {
+  background: #facc13;
+}
+
+/* taškiukai */
+.slider-dots {
+  display: flex;
+  justify-content: center;
+  gap: .5rem;
+  margin-top: 1.25rem;
+}
+.slider-dots button {
+  width: 10px;
+  height: 10px;
+  border: none;
+  border-radius: 999px;
+  background: #444;
+  cursor: pointer;
+  transition: width .2s;
+}
+.slider-dots button.is-active {
+  background: #facc13;
+  width: 26px;
+}
+
+/* šiek tiek daugiau oro didesniuose ekranuose */
+@media (min-width: 768px) {
+  .projects-slider {
+    padding: 0 16px;
+  }
+}
+@media (min-width: 1200px) {
+  .projects-slider {
+    padding: 0 24px;
+  }
+}
+

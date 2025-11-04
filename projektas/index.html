@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Pagrindinis | Mano svetainė</title>
     <meta name="description" content="Trumpas aprašymas puslapiui.">
-    <link rel="icon" href="/favicon.ico">
     <link rel="stylesheet" href="/src/main.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <script type="module" src="/src/main.js" defer></script>
 </head>
 
@@ -137,26 +137,98 @@
             </div>
         </section>
     
-        <section id="services" class="mt-16 mb-32 p-8 rounded-lg">
-            <h2 class="text-2xl font-semibold mb-6">Mūsų paslaugos</h2>
-            <ul class="space-y-4">
-                <li class="p-4 bg-gray-700 rounded-lg">
-                    <h3 class="text-xl font-bold mb-2">Žemės kasimo darbai</h3>
-                    <p>Profesionalūs žemės kasimo darbai naudojant modernų mini ekskavatorių Yanmar SV26.</p>
-                </li>
-                <li class="p-4 bg-gray-700 rounded-lg">
-                    <h3 class="text-xl font-bold mb-2">Teritorijų lyginimas</h3>
-                    <p>Efektyvus teritorijų lyginimas ir paruošimas statyboms ar sodinimui.</p>
-                </li>
-                <li class="p-4 bg-gray-700 rounded-lg">
-                    <h3 class="text-xl font-bold mb-2">Planiravimo darbai</h3>
-                    <p>Tikslus žemės planiravimas pagal jūsų poreikius ir projektus.</p>
-                </li>
-            </ul>   
-            <!-- tavo slideshow ar kortelės -->
-        </section>          
-    
-    </main>
+        <section class="projects-section">
+            <div class="projects-head">
+                <div>
+                    <p class="eyebrow">siūlomos</p>
+                    <h2>Paslaugos</h2>
+                </div>
+                <a href="/services.html" class="projects-all">Peržiūrėkite paslaugas →</a>
+            </div>
+            
+            <div class="projects-slider" data-slider="projects">
+                <button class="slider-btn prev" data-slider-prev aria-label="Previous project">‹</button>
+            
+                <div class="slider-window">
+                    <div class="slider-track" data-slider-track>
+                        <article class="project-card">
+                            <img src="https://picsum.photos/600/400?1" alt="">
+                            <div class="project-meta">
+                                <p class="tag">Longfellow Real Estate Partners</p>
+                                <h3 class="title">Avia Labs</h3>
+                                <p class="desc">California’s first all-electric life sciences campus</p>
+                                <a href="paslaugos.html" class="arrow-btn" aria-label="Peržiūrėti projektą">
+                                    <span>&rsaquo;</span>
+                                </a>
+                            </div>
+                            </article>
+                            
+                            <article class="project-card">
+                                <img src="https://picsum.photos/600/400?2" alt="">
+                                <div class="project-meta">
+                                    <p class="tag">Modern Design</p>
+                                    <h3 class="title">Mountain View Office</h3>
+                                    <p class="desc">Sustainable architecture and open working spaces.</p>
+                                    <a href="paslaugos.html" class="arrow-btn" aria-label="Peržiūrėti projektą">
+                                        <span>&rsaquo;</span>
+                                    </a>
+                                </div>
+                            </article>
+                            
+                            <article class="project-card">
+                                <img src="https://picsum.photos/600/400?3" alt="">
+                                <div class="project-meta">
+                                    <p class="tag">Private Sector</p>
+                                    <h3 class="title">Innovation Tower</h3>
+                                    <p class="desc">A creative hub for future technology projects.</p>
+                                    <a href="paslaugos.html" class="arrow-btn" aria-label="Peržiūrėti projektą">
+                                        <span>&rsaquo;</span>
+                                    </a>
+                                </div>
+                            </article>
+                        <article class="project-card">
+                            <img src="https://picsum.photos/600/400?1" alt="">
+                        </article>
+                        <article class="project-card">
+                            <img src="https://picsum.photos/600/400?2" alt="">
+                        </article>
+                        <article class="project-card">
+                            <img src="https://picsum.photos/600/400?3" alt="">
+                        </article>
+                        <article class="project-card">
+                            <img src="https://picsum.photos/600/400?4" alt="">
+                        </article>
+                        <article class="project-card">
+                            <img src="https://picsum.photos/600/400?5" alt="">
+                        </article>
+                        <article class="project-card">
+                            <img src="https://picsum.photos/600/400?6" alt="">
+                        </article>
+                        <article class="project-card">
+                            <img src="https://picsum.photos/600/400?7" alt="">
+                        </article>
+                        <article class="project-card">
+                            <img src="https://picsum.photos/600/400?8" alt="">
+                        </article>
+                        <article class="project-card">
+                            <img src="https://picsum.photos/600/400?9" alt="">
+                        </article>
+                        <article class="project-card">
+                            <img src="https://picsum.photos/600/400?10" alt="">
+                        </article>
+                        <article class="project-card">
+                            <img src="https://picsum.photos/600/400?11" alt="">
+                        </article>
+
+                    </div>
+                </div>
+            
+                <button class="slider-btn next" data-slider-next aria-label="Next project">›</button>
+            </div>
+            
+            <div class="slider-dots" data-slider-dots></div>
+            </section>
+        </main>
 
 </body>
 
