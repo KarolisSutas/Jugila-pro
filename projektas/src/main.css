@@ -511,17 +511,18 @@ nav.hidden {
   position: relative;
   max-width: 1600px;
   margin: 0 auto;
-  padding: 0 12px;          /* ČIA: vienodas kairė/dešinė */
+  padding: 0 12px;
+  overflow: hidden;        /* kirps tik pats konteineris */
 }
 
-/* langas, kuriame matosi kortelės */
+/* langas – NEBE kerpam */
 .projects-slider .slider-window {
-  overflow: hidden;
+  overflow: visible;       /* kad kortelės šešėlis galėtų išlįsti */
   width: 100%;
   box-sizing: border-box;
 }
 
-/* takelis – JS jam dės transformus ir gap’us */
+/* takelis – kaip buvo */
 .projects-slider .slider-track {
   display: flex;
   flex-wrap: nowrap;
@@ -529,6 +530,39 @@ nav.hidden {
   will-change: transform;
   transition: transform .45s ease;
 }
+
+/* kraštų maskė */
+.projects-slider::before,
+.projects-slider::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 70px;
+  height: 100%;
+  pointer-events: none;
+  z-index: 4;
+}
+
+.projects-slider::before {
+  left: 0;
+  background: linear-gradient(
+    to right,
+    oklch(0.27 0 0) 0%,
+    color-mix(in oklch, oklch(0.27 0 0), transparent 60%) 40%,
+    transparent 100%
+  );
+}
+
+.projects-slider::after {
+  right: 0;
+  background: linear-gradient(
+    to left,
+    oklch(0.27 0 0) 0%,
+    color-mix(in oklch, oklch(0.27 0 0), transparent 60%) 40%,
+    transparent 100%
+  );
+}
+
 
 /* ===== PROJECT CARD ===== */
 .project-card {
