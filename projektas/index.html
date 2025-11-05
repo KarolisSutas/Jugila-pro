@@ -4,10 +4,26 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>Jugila | Žemės kasimo darbai</title>
-    <meta name="description" content="Trumpas aprašymas puslapiui.">
+    <meta name="description"
+        content="„Jugila“ - žemės kasimo, sklypų lyginimo, drenažo klojimo ir inžinerinių tinklų darbai Utenos apskrityje. 30 metų patirtis, moderni technika, tikslumas.">
+
+    <link rel="canonical" href="https://www.jugila.lt/">
+
     <link rel="stylesheet" href="/src/main.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <meta name="theme-color" content="#0f172a">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Jugila - žemės kasimo darbai Utenoje">
+    <meta property="og:description" content="Žemės darbai, drenažas, inžineriniai tinklai, mini ekskavatorius.">
+    <meta property="og:image" content="https://www.jugila.lt/img/share.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.jugila.lt/">
+    <meta property="og:locale" content="lt_LT">
+
     <script type="module" src="/src/main.js" defer></script>
 </head>
 
@@ -15,13 +31,11 @@
     <header>
         <nav class="fixed w-full z-20 top-0 start-0">
             <div class="max-w-7xl flex flex-wrap items-center justify-between p-4">
-                <a href="/index.html" class="flex items-center space-x-3 rtl:space-x-reverse h-15">
+                <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse h-15">
                     <img src="/img/logo-jugila.png" class="h-30 w-auto" alt="Jugila Logo">
                 </a>
                 <div class="flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-                    <button id="btn-contact" class="btn-contact">
-                        <a href="/contact.html">Susisiekime</a>
-                    </button>
+                    <a href="/kontaktai/" class="btn-contact">Susisiekime</a>
                     <button data-collapse-toggle="navbar-sticky" type="button"
                         class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-amber-300 rounded-lg md:hidden focus:outline-none ring-2 ring-amber-300 cursor-pointer"
                         aria-controls="navbar-sticky" aria-expanded="false">
@@ -37,21 +51,21 @@
                     <ul
                         class="flex flex-col text-center p-4 md:p-0 mt-4 font-medium md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
                         <li>
-                            <a href="/index.html"
+                            <a href="/"
                                 class="block py-2 px-3 text-amber-300 hover:text-white md:hover:border-b  md:hover:bg-transparent md:hover:text-white md:p-0"
                                 aria-current="page">Pradžia</a>
                         </li>
                         <li>
-                            <a href="/about.html"
+                            <a href="/apie/"
                                 class="block py-2 px-3 text-amber-300 hover:text-white md:hover:border-b md:hover:bg-transparent md:hover:text-white md:p-0">Apie
                                 mus</a>
                         </li>
                         <li>
-                            <a href="/services.html"
+                            <a href="/paslaugos/"
                                 class="block py-2 px-3 text-amber-300 hover:text-white md:hover:border-b md:hover:bg-transparent md:hover:text-white md:p-0">Paslaugos</a>
                         </li>
                         <li>
-                            <a href="/contact.html"
+                            <a href="/kontaktai/"
                                 class="block py-2 px-3 text-amber-300 hover:text-white md:hover:border-b md:hover:bg-transparent md:hover:text-white md:p-0">Kontaktai</a>
                         </li>
                     </ul>
@@ -64,9 +78,9 @@
     <main class="w-full text-white">
 
         <section class="hero">
-            <span class="bg bg1"></span>
-            <span class="bg bg2"></span>
-            <span class="bg bg3"></span>
+            <span class="bg bg1" aria-hidden="true"></span>
+            <span class="bg bg2" aria-hidden="true"></span>
+            <span class="bg bg3" aria-hidden="true"></span>
 
             <div class="hero-content">
                 <span class="hero-eyebrow">Mes tikime kokybe</span>
@@ -79,11 +93,10 @@
                     Atliekame visus žemės kasimo, lyginimo ir planiravimo darbus moderniu mini ekskavatoriumi Yanmar SV26.
                     <span class="highlight">Patikimas partneris žemės darbams Utenos apskrityje!</span>
                 </p>
-                <a href="#services" class="hero-btn">Peržiūrėti paslaugas</a>
+                <a href="/paslaugos/" class="hero-btn">Peržiūrėti paslaugas</a>
             </div>
             
-            <!-- scroll hint -->
-            <span class="scroll-down">Į apačią</span>
+            <span class="scroll-down" aria-hidden="true">Į apačią</span>
         </section>
 
         <section class="m-25"></section>
@@ -104,7 +117,7 @@
                         atsakomybė leidžia įgyvendinti klientų vizijas efektyviai ir laiku.
                     </p>
         
-                    <a href="/about.html" class="about-btn">Sužinoti daugiau apie mus</a>
+                    <a href="/apie/" class="about-btn">Sužinoti daugiau apie mus</a>
                 </div>
         
                 <div class="about-image">
@@ -113,7 +126,7 @@
             </div>
         </section>
     
-        <section class="mt-35"></section>
+        <div class="mt-35"></div>
 
         <section class="projects-section">
             <div class="projects-head">
@@ -121,7 +134,7 @@
                     <p class="eyebrow">siūlomos</p>
                     <h2>Paslaugos</h2>
                 </div>
-                <a href="/services.html" class="projects-all">Peržiūrėkite visas paslaugas →</a>
+                <a href="/paslaugos/" class="projects-all">Peržiūrėkite visas paslaugas →</a>
             </div>
             
             <div class="projects-slider" data-slider="projects">
@@ -129,73 +142,89 @@
             
                 <div class="slider-window">
                     <div class="slider-track" data-slider-track>
+
                         <article class="project-card">
-                            <img src="/img/kasimoDarbai.jpg" alt="">
+                            <img src="/img/kasimoDarbai.jpg" alt="Pamatų atkasimas">
                             <div class="project-meta">
-                                <p class="tag">Longfellow Real Estate Partners</p>
-                                <h3 class="title">Avia Labs</h3>
-                                <p class="desc">California’s first all-electric life sciences campus</p>
-                                <a href="paslaugos.html" class="arrow-btn" aria-label="Peržiūrėti projektą">
+                                <p class="tag">Žemės darbai</p>
+                                <h3 class="title">Pamatų atkasimas</h3>
+                                <p class="desc">Tiksliai atkasame pamatus rekonstrukcijoms ar drenažo įrengimui.</p>
+                                <a href="/paslaugos/" class="arrow-btn" aria-label="Peržiūrėti projektą">
                                     <span>&rsaquo;</span>
                                 </a>
                             </div>
-                            </article>
+                        </article>
                             
-                            <article class="project-card">
-                                <img src="/img/drenazoKlojimas.jpg" alt="">
-                                <div class="project-meta">
-                                    <p class="tag">Modern Design</p>
-                                    <h3 class="title">Mountain View Office</h3>
-                                    <p class="desc">Sustainable architecture and open working spaces.</p>
-                                    <a href="paslaugos.html" class="arrow-btn" aria-label="Peržiūrėti projektą">
-                                        <span>&rsaquo;</span>
-                                    </a>
-                                </div>
-                            </article>
+                        <article class="project-card">
+                            <img src="/img/drenazoKlojimas.jpg" alt="Drenažo klojimas">
+                            <div class="project-meta">
+                                <p class="tag">Inžinerinių tinklų įrengimas</p>
+                                <h3 class="title">Drenažo klojimas</h3>
+                                <p class="desc">Įrengiame drenažo sistemas efektyviam sklypo sausinimui.</p>
+                                <a href="/paslaugos/" class="arrow-btn" aria-label="Peržiūrėti projektą">
+                                    <span>&rsaquo;</span>
+                                </a>
+                            </div>
+                        </article>
                             
-                            <article class="project-card">
-                                <img src="/img/poliuGrezimas.jpg" alt="">
-                                <div class="project-meta">
-                                    <p class="tag">Private Sector</p>
-                                    <h3 class="title">Innovation Tower</h3>
-                                    <p class="desc">A creative hub for future technology projects.</p>
-                                    <a href="paslaugos.html" class="arrow-btn" aria-label="Peržiūrėti projektą">
-                                        <span>&rsaquo;</span>
-                                    </a>
-                                </div>
-                            </article>
                         <article class="project-card">
-                            <img src="https://picsum.photos/600/400?1" alt="">
+                            <img src="/img/poliuGrezimas.jpg" alt="Polių gręžimas">
+                            <div class="project-meta">
+                                <p class="tag">Žemės darbai</p>
+                                <h3 class="title">Polių gręžimas</h3>
+                                <p class="desc">Gręžiame įvairaus diametro polius tvirtam ir stabiliam pamatui.</p>
+                                <a href="/paslaugos/" class="arrow-btn" aria-label="Peržiūrėti projektą">
+                                    <span>&rsaquo;</span>
+                                </a>
+                            </div>
                         </article>
+
                         <article class="project-card">
-                            <img src="https://picsum.photos/600/400?2" alt="">
+                            <img src="/img/elektr&vand.jpg" alt="Elektros ir vandentiekio vedimas">
+                            <div class="project-meta">
+                                <p class="tag">Inžineriniai tinklai</p>
+                                <h3 class="title">Elektros ir vandentiekio vedimas</h3>
+                                <p class="desc">Kasame tranšėjas, klojame elektros bei vandentiekio tinklus.</p>
+                                <a href="/paslaugos/" class="arrow-btn" aria-label="Peržiūrėti projektą">
+                                    <span>&rsaquo;</span>
+                                </a>
+                            </div>
                         </article>
+
                         <article class="project-card">
-                            <img src="https://picsum.photos/600/400?3" alt="">
+                            <img src="/img/sklypuLyginimas.jpg" alt="Sklypų lyginimas">
+                            <div class="project-meta">
+                                <p class="tag">Žemės darbai</p>
+                                <h3 class="title">Sklypų lyginimas</h3>
+                                <p class="desc">Paruošiame sklypą statyboms ar apželdinimui pagal projektą.</p>
+                                <a href="/paslaugos/" class="arrow-btn" aria-label="Peržiūrėti projektą">
+                                    <span>&rsaquo;</span>
+                                </a>
+                            </div>
                         </article>
+
                         <article class="project-card">
-                            <img src="https://picsum.photos/600/400?4" alt="">
+                            <img src="/img/buldozerio.jpg" alt="Ratinio buldozerio paslaugos">
+                            <div class="project-meta">
+                                <p class="tag">Žemės darbai</p>
+                                <h3 class="title">Ratinio buldozerio paslaugos</h3>
+                                <p class="desc">Atliekame žemės stumdymo, išlyginimo ir planiravimo darbus.</p>
+                                <a href="/paslaugos/" class="arrow-btn" aria-label="Peržiūrėti projektą">
+                                    <span>&rsaquo;</span>
+                                </a>
+                            </div>
                         </article>
+
                         <article class="project-card">
-                            <img src="https://picsum.photos/600/400?5" alt="">
-                        </article>
-                        <article class="project-card">
-                            <img src="https://picsum.photos/600/400?6" alt="">
-                        </article>
-                        <article class="project-card">
-                            <img src="https://picsum.photos/600/400?7" alt="">
-                        </article>
-                        <article class="project-card">
-                            <img src="https://picsum.photos/600/400?8" alt="">
-                        </article>
-                        <article class="project-card">
-                            <img src="https://picsum.photos/600/400?9" alt="">
-                        </article>
-                        <article class="project-card">
-                            <img src="https://picsum.photos/600/400?10" alt="">
-                        </article>
-                        <article class="project-card">
-                            <img src="https://picsum.photos/600/400?11" alt="">
+                            <img src="/img/sniegoValymas.jpg" alt="Sniego valymo paslauga">
+                            <div class="project-meta">
+                                <p class="tag">Sezoninės paslaugos</p>
+                                <h3 class="title">Sniego valymo paslauga</h3>
+                                <p class="desc">Valome sniegą nuo kiemų, aikštelių ir įvažiavimų greitai bei tvarkingai.</p>
+                                <a href="/paslaugos/" class="arrow-btn" aria-label="Peržiūrėti projektą">
+                                    <span>&rsaquo;</span>
+                                </a>
+                            </div>
                         </article>
 
                     </div>
@@ -208,7 +237,7 @@
             </section>
         </main>
 
-        <section class="m-35"></section>
+        <div class="m-35"></div>
 
         <footer class="mt-50">
 

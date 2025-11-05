@@ -4,10 +4,23 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Pagrindinis | Mano svetainė</title>
-    <meta name="description" content="Trumpas aprašymas puslapiui.">
+
+    <title>Paslaugos | Jugila - Žemės darbai ir inžinerinių tinklų įrengimas</title>
+    <meta name="description"
+        content="Atliekame žemės kasimo, sklypų lyginimo, pamatų atkasinimo, drenažo klojimo ir inžinerinių tinklų darbus visoje Utenos apskrityje.">
+
     <link rel="icon" href="/favicon.ico">
     <link rel="stylesheet" href="/src/main.css">
+    <link rel="canonical" href="https://www.jugila.lt/paslaugos/">
+
+    <meta property="og:title" content="Paslaugos | Jugila - Žemės darbai ir inžinerinių tinklų įrengimas">
+    <meta property="og:description"
+        content="Atliekame žemės kasimo, sklypų lyginimo, pamatų atkasinimo, drenažo klojimo ir inžinerinių tinklų darbus visoje Utenos apskrityje.">
+    <meta property="og:image" content="/img/share.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.jugila.lt/paslaugos/">
+    <meta property="og:locale" content="lt_LT">
+
     <script type="module" src="/src/main.js" defer></script>
 </head>
 
@@ -15,12 +28,12 @@
     <header>
         <nav class="fixed w-full z-20 top-0 start-0">
             <div class="max-w-7xl flex flex-wrap items-center justify-between p-4">
-                <a href="/index.html" class="flex items-center space-x-3 rtl:space-x-reverse h-15">
+                <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse h-15">
                     <img src="/img/logo-jugila.png" class="h-30 w-auto" alt="Jugila Logo">
                 </a>
                 <div class="flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
                     <button id="btn-contact" class="btn-contact">
-                        <a href="/contact.html">Susisiekime</a>
+                        <a href="/kontaktai/">Susisiekime</a>
                     </button>
                     <button data-collapse-toggle="navbar-sticky" type="button"
                         class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-amber-300 rounded-lg md:hidden focus:outline-none ring-2 ring-amber-300 cursor-pointer"
@@ -37,21 +50,20 @@
                     <ul
                         class="flex flex-col text-center p-4 md:p-0 mt-4 font-medium md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
                         <li>
-                            <a href="/index.html"
-                                class="block py-2 px-3 text-amber-300 hover:text-white md:hover:border-b  md:hover:bg-transparent md:hover:text-white md:p-0"
-                                aria-current="page">Pradžia</a>
+                            <a href="/"
+                                class="block py-2 px-3 text-amber-300 hover:text-white md:hover:border-b  md:hover:bg-transparent md:hover:text-white md:p-0">Pradžia</a>
                         </li>
                         <li>
-                            <a href="/about.html"
-                                class="block py-2 px-3 text-amber-300 hover:text-white md:hover:border-b md:hover:bg-transparent md:hover:text-white md:p-0">Apie
-                                mus</a>
+                            <a href="/apie/"
+                                class="block py-2 px-3 text-amber-300 hover:text-white md:hover:border-b md:hover:bg-transparent md:hover:text-white md:p-0">Apie mus</a>
                         </li>
                         <li>
-                            <a href="/services.html"
-                                class="block py-2 px-3 text-amber-300 hover:text-white md:hover:border-b md:hover:bg-transparent md:hover:text-white md:p-0">Paslaugos</a>
+                            <a href="/paslaugos/"
+                                class="block py-2 px-3 text-amber-300 hover:text-white md:hover:border-b md:hover:bg-transparent md:hover:text-white md:p-0" 
+                                aria-current="page">Paslaugos</a>
                         </li>
                         <li>
-                            <a href="/contact.html"
+                            <a href="/kontaktai/"
                                 class="block py-2 px-3 text-amber-300 hover:text-white md:hover:border-b md:hover:bg-transparent md:hover:text-white md:p-0">Kontaktai</a>
                         </li>
                     </ul>
