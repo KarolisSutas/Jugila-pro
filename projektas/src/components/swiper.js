@@ -25,11 +25,11 @@ export function initSwiper() {
 
     // --- 1. breakpoint'ai (tavo logika) ---
     function getPerView() {
-        const w = window.innerWidth;
-        if (w >= 1420) return 5;
-        if (w >= 1030) return 4;
-        if (w >= 770) return 3;
-        if (w >= 370) return 2;
+        const width = window.innerWidth;
+        if (width >= 1420) return 5;
+        if (width >= 1030) return 4;
+        if (width >= 770) return 3;
+        if (width >= 370) return 2;
         return 1;
     }
 
@@ -201,6 +201,8 @@ export function initSwiper() {
     function startAutoplay() {
         if (state.autoplayId) return;
         state.autoplayId = setInterval(() => {
+            // jei pelė dabar virš sliderio – nieko nedarom
+            if (state.isPointerOver) return;
             next();
         }, state.autoplayMs);
     }
@@ -215,36 +217,49 @@ export function initSwiper() {
         stopAutoplay();
         startAutoplay();
     }
-
-      // --- 8. eventai ---
-    nextBtn?.addEventListener('click', () => {
-        next();
-        restartAutoplay();
-    });
-    prevBtn?.addEventListener('click', () => {
-        prev();
-        restartAutoplay();
-    });
-
-    // sustabdom ir ant sliderio...
-    slider.addEventListener('mouseenter', stopAutoplay);
-    slider.addEventListener('mouseleave', startAutoplay);
-
-    // ...ir ANT KIEKVIENOS kortelės / overlay
-    const cards = slider.querySelectorAll('.project-card');
-    cards.forEach((card) => {
-        card.addEventListener('mouseenter', stopAutoplay);
-        card.addEventListener('mouseleave', startAutoplay);
-
-        // jeigu overlay viduj turi nuorodą / mygtuką:
-        const meta = card.querySelector('.project-meta');
-        if (meta) {
-            meta.addEventListener('mouseenter', stopAutoplay);
-            meta.addEventListener('mouseleave', startAutoplay);
-        }
-    });
-
-    window.addEventListener('resize', layout);
+          // --- 8. eventai ---
+        nextBtn?.addEventListener('click', () => {
+            next();
+            restartAutoplay();
+        });
+    
+        prevBtn?.addEventListener('click', () => {
+            prev();
+            restartAutoplay();
+        });
+    
+        // vėliava: ar pelė virš sliderio
+        state.isPointerOver = false;
+    
+        // kai tik pelė įeina į sliderį – nustatom vėliavą ir sustabdom
+        slider.addEventListener('mouseenter', () => {
+            state.isPointerOver = true;
+            stopAutoplay();
+        });
+    
+        // kai pelė išeina – nuimam vėliavą ir vėl paleidžiam
+        slider.addEventListener('mouseleave', () => {
+            state.isPointerOver = false;
+            startAutoplay();
+        });
+    
+        // papildomai: jei užvedi ant kortelės / overlay (išlendantis tekstas)
+        slider.addEventListener('mouseover', (e) => {
+            if (e.target.closest('.project-card') || e.target.closest('.project-meta')) {
+                state.isPointerOver = true;
+                stopAutoplay();
+            }
+        });
+    
+        slider.addEventListener('mouseout', (e) => {
+            // išeinam iš sliderio visai
+            if (!slider.contains(e.relatedTarget)) {
+                state.isPointerOver = false;
+                startAutoplay();
+            }
+        });
+    
+        window.addEventListener('resize', layout);
 
     // --- 9. init ---
     layout();
