@@ -33,6 +33,10 @@ nav.hidden {
   transform: translateY(-100%);
 }
 
+a[data-dropdown-toggle="dropdownHover"]:hover svg {
+  transform: rotate(180deg);
+  transition: transform 0.5s ease;
+}
 
 /* SCROLL TO TOP mygtukas */
 #scrollTopBtn {

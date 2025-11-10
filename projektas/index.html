@@ -48,7 +48,7 @@
                 </div>
                 <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
                     <ul
-                        class="flex flex-col text-center p-4 md:p-0 mt-4 font-medium md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
+                        class="flex flex-col text-center text-sm p-4 md:p-0 mt-4 font-medium md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
                         <li>
                             <a href="/"
                                 class="block py-2 px-3 text-amber-300 hover:text-white md:hover:border-b  md:hover:bg-transparent md:hover:text-white md:p-0"
@@ -60,8 +60,36 @@
                                 mus</a>
                         </li>
                         <li>
-                            <a href="/paslaugos/"
-                                class="block py-2 px-3 text-amber-300 hover:text-white md:hover:border-b md:hover:bg-transparent md:hover:text-white md:p-0">Paslaugos</a>
+                            <a href="/paslaugos/" id="dropdownHoverButton" 
+                            data-dropdown-toggle="dropdownHover" 
+                            data-dropdown-trigger="hover" 
+                            class="flex justify-center items-center py-2 px-3 text-amber-300 hover:text-white md:hover:border-b md:hover:bg-transparent md:hover:text-white md:p-0">
+                                Paslaugos
+                                <svg class="w-2.5 h-2.5 ms-1 transition-transform duration-200" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
+                                </svg>
+                            </a>
+
+                            <div id="dropdownHover"
+                                class="absolute hidden group-hover:block mt-2 rounded-md w-44 z-10 bg-[rgba(17,17,17)] md:bg-[rgba(17,17,17,0.8)] backdrop-blur-[6px] shadow-[0_2px_10px_rgba(0,0,0,0.3)] border border-[rgba(255,255,255,0.08)]">
+                                <ul class="py-2 text-sm text-amber-300">
+                                    <li>
+                                        <a href="/paslaugos/zemes-darbai/" class="block px-4 py-2 hover:text-white hover:bg-amber-300/15">Žemės
+                                            darbai</a>
+                                    </li>
+                                    <li>
+                                        <a href="/paslaugos/inzineriniai-darbai/"
+                                            class="block px-4 py-2 hover:text-white hover:bg-amber-300/15">Inžineriniai
+                                            darbai</a>
+                                    </li>
+                                    <li>
+                                        <a href="paslaugos/sezonines-paslaugos/" class="block px-4 py-2 hover:text-white hover:bg-amber-300/15">Sezoninės
+                                            paslaugos</a>
+                                    </li>
+                                </ul>
+                            </div>
+
                         </li>
                         <li>
                             <a href="/kontaktai/"
@@ -71,7 +99,7 @@
                 </div>
             </div>
         </nav>
-        <button id="scrollTopBtn" title="Į viršų">↑</button> 
+        <button id="scrollTopBtn" title="Į viršų">↑</button>
     </header>
 
     <main class="w-full text-white">
@@ -84,17 +112,18 @@
             <div class="hero-content">
                 <span class="hero-eyebrow">Mes tikime kokybe</span>
                 <h1 class="hero-title">
-                    30 metų 
+                    30 metų
                     <span class="highlight">patirtis</span> ir <span class="highlight">tikslumas</span>
                     žemės kasimo darbuose
                 </h1>
                 <p class="hero-sub">
-                    Atliekame visus žemės kasimo, lyginimo ir planiravimo darbus moderniu mini ekskavatoriumi Yanmar SV26.
+                    Atliekame visus žemės kasimo, lyginimo ir planiravimo darbus moderniu mini ekskavatoriumi Yanmar
+                    SV26.
                     <span class="highlight">Patikimas partneris žemės darbams Utenos apskrityje!</span>
                 </p>
                 <a href="/paslaugos/" class="hero-btn">Peržiūrėti paslaugas</a>
             </div>
-            
+
             <span class="scroll-down" aria-hidden="true">Į apačią</span>
         </section>
 
@@ -103,28 +132,28 @@
             <div class="about-container">
                 <div class="about-text">
                     <h2>DIRBAME <span class="highlight">AUKŠČIAUSIU LYGIU</span></h2>
-        
+
                     <p class="about-lead">
                         <strong>„Jugila“</strong> - tai daugiau nei 30 metų patirties turinti įmonė,
                         atliekanti žemės kasimo, lyginimo ir planiravimo darbus visoje Utenos apskrityje.
                         Mūsų tikslas - užtikrinti kokybę, tikslumą ir patikimumą kiekviename projekte.
                     </p>
-        
+
                     <p class="about-desc">
                         Dirbame su moderniu mini ekskavatoriumi <strong>Yanmar SV26</strong>, kuris leidžia
                         pasiekti aukštą darbo tikslumą net sudėtingose vietose. Mūsų komandos patirtis ir
                         atsakomybė leidžia įgyvendinti klientų vizijas efektyviai ir laiku.
                     </p>
-        
+
                     <a href="/apie/" class="about-btn">Sužinoti daugiau apie mus</a>
                 </div>
-        
+
                 <div class="about-image">
                     <img src="/img/darbai.jpg" alt="Jugila - žemės kasimo darbai">
                 </div>
             </div>
         </section>
-    
+
         <div class="mt-35"></div>
 
         <section class="projects-section">
@@ -135,10 +164,10 @@
                 </div>
                 <a href="/paslaugos/" class="projects-all">Peržiūrėkite visas paslaugas →</a>
             </div>
-            
+
             <div class="projects-slider" data-slider="projects">
                 <button class="slider-btn prev" data-slider-prev aria-label="Previous project">‹</button>
-            
+
                 <div class="slider-window">
                     <div class="slider-track" data-slider-track>
 
@@ -153,7 +182,7 @@
                                 </a>
                             </div>
                         </article>
-                            
+
                         <article class="project-card">
                             <img src="/img/drenazoKlojimas.jpg" alt="Drenažo klojimas">
                             <div class="project-meta">
@@ -165,7 +194,7 @@
                                 </a>
                             </div>
                         </article>
-                            
+
                         <article class="project-card">
                             <img src="/img/poliuGrezimas.jpg" alt="Polių gręžimas">
                             <div class="project-meta">
@@ -228,17 +257,17 @@
 
                     </div>
                 </div>
-            
+
                 <button class="slider-btn next" data-slider-next aria-label="Next project">›</button>
             </div>
-            
+
             <div class="slider-dots" data-slider-dots></div>
-            </section>
-        </main>
+        </section>
+    </main>
 
-        <div class="m-35"></div>
+    <div class="m-35"></div>
 
-        <footer class="mt-50">
+    <footer class="mt-50">
 
         <!-- <div class="cube-container">
             <div class="cube">
