@@ -33,6 +33,7 @@ nav.hidden {
   transform: translateY(-100%);
 }
 
+
 /* SCROLL TO TOP mygtukas */
 #scrollTopBtn {
   position: fixed;
@@ -73,6 +74,32 @@ nav.hidden {
   @apply text-white bg-[#e7cc34] border-[#e7cc34];
   text-shadow: 0 0 5px #f7f6d2, 0 0 10px #f7f6d2;
   box-shadow: 0 0 5px #e7cc34, 0 0 20px #e7cc34, 0 0 50px #e7cc34;
+}
+
+@media (max-width: 768px) {
+  nav {
+    background-color: rgba(17, 17, 17, 0.50) !important;
+    backdrop-filter: blur(6px) !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3) !important;
+  }
+  .btn-contact {
+    @apply px-3 py-1.5 text-[13px];
+  }
+
+  /* BURGERIO mygtukas */
+  button[data-collapse-toggle="navbar-sticky"] {
+    width: 34px;
+    height: 34px;
+    padding: 0.25rem;
+    ring-width: 1px; /* plonesnis apvadas */
+  }
+
+  /* BURGERIO ikonos dydis */
+  button[data-collapse-toggle="navbar-sticky"] svg {
+    width: 18px;
+    height: 18px;
+  }
+  
 }
 
 .hero {
