@@ -29,12 +29,10 @@
         <nav class="fixed w-full z-20 top-0 start-0">
             <div class="w-auto flex flex-wrap items-center justify-between p-4">
                 <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse h-15">
-                    <img src="/img/logo-jugila.png" class="h-30 w-auto" alt="Jugila Logo">
+                    <img src="/img/logo-jugila.png" class="h-35 w-auto" alt="Jugila Logo">
                 </a>
                 <div class="flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-                    <button id="btn-contact" class="btn-contact">
-                        <a href="/kontaktai/">Susisiekime</a>
-                    </button>
+                    <a href="/kontaktai/" class="btn-contact">Susisiekime</a>
                     <button data-collapse-toggle="navbar-sticky" type="button"
                         class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-amber-300 rounded-lg md:hidden focus:outline-none ring-2 ring-amber-300 cursor-pointer"
                         aria-controls="navbar-sticky" aria-expanded="false">
@@ -48,19 +46,48 @@
                 </div>
                 <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
                     <ul
-                        class="flex flex-col text-center p-4 md:p-0 mt-4 font-medium md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
+                        class="flex flex-col text-center text-sm p-4 md:p-0 mt-4 font-medium md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
                         <li>
                             <a href="/"
-                                class="block py-2 px-3 text-amber-300 hover:text-white md:hover:border-b  md:hover:bg-transparent md:hover:text-white md:p-0">Pradžia</a>
+                                class="block py-2 px-3 text-amber-300 hover:text-white md:hover:border-b  md:hover:bg-transparent md:hover:text-white md:p-0"
+                                aria-current="page">Pradžia</a>
                         </li>
                         <li>
                             <a href="/apie/"
-                                class="block py-2 px-3 text-amber-300 hover:text-white md:hover:border-b md:hover:bg-transparent md:hover:text-white md:p-0">Apie mus</a>
+                                class="block py-2 px-3 text-amber-300 hover:text-white md:hover:border-b md:hover:bg-transparent md:hover:text-white md:p-0">Apie
+                                mus</a>
                         </li>
                         <li>
-                            <a href="/paslaugos/"
-                                class="block py-2 px-3 text-amber-300 hover:text-white md:hover:border-b md:hover:bg-transparent md:hover:text-white md:p-0" 
-                                aria-current="page">Paslaugos</a>
+                            <a href="/paslaugos/" id="dropdownHoverButton" 
+                            data-dropdown-toggle="dropdownHover" 
+                            data-dropdown-trigger="hover" 
+                            class="flex justify-center items-center py-2 px-3 text-amber-300 hover:text-white md:hover:border-b md:hover:bg-transparent md:hover:text-white md:p-0">
+                                Paslaugos
+                                <svg class="w-2.5 h-2.5 ms-1 transition-transform duration-200" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
+                                </svg>
+                            </a>
+
+                            <div id="dropdownHover"
+                                class="absolute hidden group-hover:block mt-2 rounded-md w-44 z-10 bg-[rgba(17,17,17)] md:bg-[rgba(17,17,17,0.8)] backdrop-blur-[6px] shadow-[0_2px_10px_rgba(0,0,0,0.3)] border border-[rgba(255,255,255,0.08)]">
+                                <ul class="py-2 text-sm text-amber-300">
+                                    <li>
+                                        <a href="/paslaugos/zemes-darbai/" class="block px-4 py-2 hover:text-white hover:bg-amber-300/15">Žemės
+                                            darbai</a>
+                                    </li>
+                                    <li>
+                                        <a href="/paslaugos/inzineriniai-darbai/"
+                                            class="block px-4 py-2 hover:text-white hover:bg-amber-300/15">Inžineriniai
+                                            darbai</a>
+                                    </li>
+                                    <li>
+                                        <a href="/paslaugos/sezonines-paslaugos/" class="block px-4 py-2 hover:text-white hover:bg-amber-300/15">Sezoninės
+                                            paslaugos</a>
+                                    </li>
+                                </ul>
+                            </div>
+
                         </li>
                         <li>
                             <a href="/kontaktai/"
@@ -70,7 +97,7 @@
                 </div>
             </div>
         </nav>
-        <button id="scrollTopBtn" title="Į viršų">↑</button> 
+        <button id="scrollTopBtn" title="Į viršų">↑</button>
     </header>
 
     <main>

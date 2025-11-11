@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="lt">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Paslaugos | Jugila - Žemės darbai ir inžinerinių tinklų įrengimas</title>
+    <meta name="description"
+        content="Atliekame žemės kasimo, sklypų lyginimo, pamatų atkasinimo, drenažo klojimo ir inžinerinių tinklų darbus visoje Utenos apskrityje.">
+
+    <link rel="icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/src/main.css">
+    <link rel="canonical" href="https://www.jugila.lt/paslaugos/">
+
+    <meta property="og:title" content="Paslaugos | Jugila - Žemės darbai ir inžinerinių tinklų įrengimas">
+    <meta property="og:description"
+        content="Atliekame žemės kasimo, sklypų lyginimo, pamatų atkasinimo, drenažo klojimo ir inžinerinių tinklų darbus visoje Utenos apskrityje.">
+    <meta property="og:image" content="/img/share.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.jugila.lt/paslaugos/">
+    <meta property="og:locale" content="lt_LT">
+
+    <script type="module" src="/src/main.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav class="fixed w-full z-20 top-0 start-0">
+            <div class="w-auto flex flex-wrap items-center justify-between p-4">
+                <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse h-15">
+                    <img src="/img/logo-jugila.png" class="h-35 w-auto" alt="Jugila Logo">
+                </a>
+                <div class="flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                    <a href="/kontaktai/" class="btn-contact">Susisiekime</a>
+                    <button data-collapse-toggle="navbar-sticky" type="button"
+                        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-amber-300 rounded-lg md:hidden focus:outline-none ring-2 ring-amber-300 cursor-pointer"
+                        aria-controls="navbar-sticky" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 17 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 1h15M1 7h15M1 13h15" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                    <ul
+                        class="flex flex-col text-center text-sm p-4 md:p-0 mt-4 font-medium md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
+                        <li>
+                            <a href="/"
+                                class="block py-2 px-3 text-amber-300 hover:text-white md:hover:border-b  md:hover:bg-transparent md:hover:text-white md:p-0"
+                                aria-current="page">Pradžia</a>
+                        </li>
+                        <li>
+                            <a href="/apie/"
+                                class="block py-2 px-3 text-amber-300 hover:text-white md:hover:border-b md:hover:bg-transparent md:hover:text-white md:p-0">Apie
+                                mus</a>
+                        </li>
+                        <li>
+                            <a href="/paslaugos/" id="dropdownHoverButton" 
+                            data-dropdown-toggle="dropdownHover" 
+                            data-dropdown-trigger="hover" 
+                            class="flex justify-center items-center py-2 px-3 text-amber-300 hover:text-white md:hover:border-b md:hover:bg-transparent md:hover:text-white md:p-0">
+                                Paslaugos
+                                <svg class="w-2.5 h-2.5 ms-1 transition-transform duration-200" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
+                                </svg>
+                            </a>
+
+                            <div id="dropdownHover"
+                                class="absolute hidden group-hover:block mt-2 rounded-md w-44 z-10 bg-[rgba(17,17,17)] md:bg-[rgba(17,17,17,0.8)] backdrop-blur-[6px] shadow-[0_2px_10px_rgba(0,0,0,0.3)] border border-[rgba(255,255,255,0.08)]">
+                                <ul class="py-2 text-sm text-amber-300">
+                                    <li>
+                                        <a href="/paslaugos/zemes-darbai/" class="block px-4 py-2 hover:text-white hover:bg-amber-300/15">Žemės
+                                            darbai</a>
+                                    </li>
+                                    <li>
+                                        <a href="/paslaugos/inzineriniai-darbai/"
+                                            class="block px-4 py-2 hover:text-white hover:bg-amber-300/15">Inžineriniai
+                                            darbai</a>
+                                    </li>
+                                    <li>
+                                        <a href="/paslaugos/sezonines-paslaugos/" class="block px-4 py-2 hover:text-white hover:bg-amber-300/15">Sezoninės
+                                            paslaugos</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </li>
+                        <li>
+                            <a href="/kontaktai/"
+                                class="block py-2 px-3 text-amber-300 hover:text-white md:hover:border-b md:hover:bg-transparent md:hover:text-white md:p-0">Kontaktai</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <button id="scrollTopBtn" title="Į viršų">↑</button>
+    </header>
+
+    <main class="w-full my-35 text-white">
+        <div class="max-w-auto mx-5 my-10 px-4 py-20 flex flex-col gap-8 text-amber-50 hover:text-white bg-amber-900/10 rounded-lg border border-amber-300/20">
+            <a href="/paslaugos/zemes-darbai/">Žemės darbai</a>
+            <a href="/paslaugos/inzineriniai-darbai/">Inžineriniai darbai</a>
+            <a href="/paslaugos/sezonines-paslaugos/">Sezoninės paslaugos</a>
+        </div>
+
+    </main>
+
+    <footer class="bg-[#1a1a1a] border-t border-amber-400 mt-16">
+        <div class="max-w-7xl mx-auto px-6 py-1 flex flex-col sm:flex-row sm:justify-between sm:items-center">
+            <ul class="flex flex-wrap items-center gap-6 sm:mt-0 text-sm font-medium">
+                <li><a href="/apie/" class="text-gray-400 hover:text-amber-300 transition-colors">Apie mus</a></li>
+                <li><a href="/paslaugos/" class="text-gray-400 hover:text-amber-300 transition-colors">Paslaugos</a></li>
+                <li><a href="/kontaktai/" class="text-gray-400 hover:text-amber-300 transition-colors">Kontaktai</a></li>
+            </ul>
+            
+            <div class="flex items-center">
+                <img src="/img/logo-jugila.png" alt="Jugila Logo" class="h-35 w-auto" />
+            </div>
+            
+            <ul class="flex flex-wrap flex-col leading-relaxed gap-1 sm:mt-0 font-medium text-sm text-right">
+                <li class="text-gray-400 hover:text-amber-300 transition-colors cursor-pointer">Alvydas Šereika</li> 
+                <li class="text-gray-400 hover:text-amber-300 transition-colors cursor-pointer">Tel.: +370687456789</li> 
+                <li class="text-gray-400 hover:text-amber-300 transition-colors cursor-pointer">Įmonės kodas: 302589534</li> 
+                <li class="text-gray-400 hover:text-amber-300 transition-colors cursor-pointer">PVM mokėtojo kodas: LT100012456412</li> 
+            </ul>
+        </div>
+    
+        <div class="border-t border-neutral-700">
+            <p class="text-center text-xs text-gray-500 py-4">
+                © 2025 <a href="/" class="hover:text-amber-300">Jugila™</a>. Visos teisės saugomos.
+            </p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

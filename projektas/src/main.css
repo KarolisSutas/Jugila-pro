@@ -238,7 +238,7 @@ a[data-dropdown-toggle="dropdownHover"]:hover svg {
   line-height: 1.5;
   margin-bottom: 2rem;
 }
-
+/* HERO BTN */
 .hero-btn {
   animation-delay: 1.2s;
   display: inline-flex;
@@ -247,16 +247,18 @@ a[data-dropdown-toggle="dropdownHover"]:hover svg {
   background: #f5cd13;
   color: #fff;
   padding: .75rem 1.6rem;
-  border-radius: 4px;
+  border-radius: 6px;
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: .02em;
   transition: background .25s ease;
+  font-weight: 600;
+  transition: all 0.3s ease;
 }
 
 .hero-btn:hover {
-  background: #ffcc33;
-  box-shadow: 0 0 8px rgba(245, 205, 19, 0.7);
+  background: #eab308;
+  box-shadow: 0 0 12px rgba(250, 204, 21, 0.5);
 }
 
 .highlight {
@@ -359,7 +361,7 @@ a[data-dropdown-toggle="dropdownHover"]:hover svg {
   margin-bottom: 2rem;
 }
 
-/* Mygtukas */
+/* ABOUT BTN */
 .about-btn {
   display: inline-block;
   background: #facc13;
