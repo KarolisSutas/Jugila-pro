@@ -24,7 +24,7 @@
     <script type="module" src="/src/main.js" defer></script>
 </head>
 
-<body>
+<body class="min-h-dvh flex flex-col">
     <header>
         <nav class="fixed w-full z-20 top-0 start-0">
             <div class="w-auto flex flex-wrap items-center justify-between p-4">
@@ -73,17 +73,19 @@
                                 class="absolute hidden group-hover:block mt-2 rounded-md w-44 z-10 bg-[rgba(17,17,17)] md:bg-[rgba(17,17,17,0.8)] backdrop-blur-[6px] shadow-[0_2px_10px_rgba(0,0,0,0.3)] border border-[rgba(255,255,255,0.08)]">
                                 <ul class="py-2 text-sm text-amber-300">
                                     <li>
-                                        <a href="/paslaugos/zemes-darbai/" class="block px-4 py-2 hover:text-white hover:bg-amber-300/15">Žemės
-                                            darbai</a>
+                                        <a href="/paslaugos/zemes-darbai/" 
+                                        class="block px-4 py-2 hover:text-white hover:bg-amber-300/15">Žemės darbai
+                                        </a>
                                     </li>
                                     <li>
                                         <a href="/paslaugos/inzineriniai-darbai/"
-                                            class="block px-4 py-2 hover:text-white hover:bg-amber-300/15">Inžineriniai
-                                            darbai</a>
+                                            class="block px-4 py-2 hover:text-white hover:bg-amber-300/15">Inžineriniai darbai
+                                        </a>
                                     </li>
                                     <li>
-                                        <a href="/paslaugos/sezonines-paslaugos/" class="block px-4 py-2 hover:text-white hover:bg-amber-300/15">Sezoninės
-                                            paslaugos</a>
+                                        <a href="/paslaugos/sezonines-paslaugos/" 
+                                        class="block px-4 py-2 hover:text-white hover:bg-amber-300/15">Sezoninės paslaugos
+                                        </a>
                                     </li>
                                 </ul>
                             </div>
@@ -100,38 +102,71 @@
         <button id="scrollTopBtn" title="Į viršų">↑</button>
     </header>
 
-    <main>
+    <main class="flex-1">
+
+        <div class="page-header ml-5 mt-35">
+            <p class="trns-text">Apie mus</p>
+            <div class="border-b-2 border-b-amber-300"></div>
+        </div>        
+
+        <section class="about-intro">
+            <div class="about-container">
+                <div class="about-text">
+                    <h2>DIRBAME <span class="highlight">PATIKIMAI IR UŽTIKRINTAI</span></h2>
+
+                    <p class="about-lead">
+                        <strong>„Jugila“</strong> veikia jau penktus metus, tačiau mūsų darbų atlikėjas ir vadovas turi daugiau kaip 30 metų patirtį žemės kasimo, lyginimo ir planiravimo srityje. Ši ilgametė patirtis leidžia užtikrinti tikslumą, tvarką ir tinkamus sprendimus įvairaus sudėtingumo projektuose.
+                        Visus darbus atliekame naudodami patikimą techniką Yanmar SV26 mini ekskavatorių, tinkantį tiek mažoms erdvėms, tiek didesniems sklypams.
+                    </p>
+
+                    <p class="about-lead">
+                        Darbus atliekame jums patogiu metu - darbo dienomis, po darbo valandų ir savaitgaliais. Prisitaikome prie kliento grafiko ir užtikriname, kad darbai būtų vykdomi sklandžiai bei netrukdytų jūsų planams.
+                    </p>
+
+
+                    <p class="about-desc">
+                        Dirbame Utenos apskrityje — kiekvienas objektas mums yra svarbus, todėl darbus atliekame atsakingai nuo pradžios iki pabaigos.                    
+                    </p>
+
+                    <a href="/paslaugos/" class="about-btn">Paslaugos</a>
+                </div>
+
+                <div class="about-image">
+                    <img src="/img/jugilaforest.jpg" alt="Jugila - žemės kasimo darbai">
+                </div>
+            </div>
+        </section>
+
     </main>
 
-    <footer class="bg-[#1a1a1a] border-t border-amber-400 mt-16">
-        <div class="max-w-7xl mx-auto px-6 py-1 flex flex-col sm:flex-row sm:justify-between sm:items-center">
-            <ul class="flex flex-wrap items-center gap-6 sm:mt-0 text-sm font-medium">
-                <li><a href="/apie/" class="text-gray-400 hover:text-amber-300 transition-colors">Apie mus</a></li>
-                <li><a href="/paslaugos/" class="text-gray-400 hover:text-amber-300 transition-colors">Paslaugos</a></li>
-                <li><a href="/kontaktai/" class="text-gray-400 hover:text-amber-300 transition-colors">Kontaktai</a></li>
+    <footer class="bg-[#1a1a1a] border-t-2 border-amber-300">
+        <div class="w-full mx-auto px-6 py-4 flex flex-col items-center gap-4 sm:flex-row sm:justify-between sm:items-center">
+    
+            <ul class="flex gap-6 text-sm font-medium text-gray-400 justify-center sm:justify-start">
+                <li><a href="/apie/" class="hover:text-amber-300 transition-colors">Apie mus</a></li>
+                <li><a href="/paslaugos/" class="hover:text-amber-300 transition-colors">Paslaugos</a></li>
+                <li><a href="/kontaktai/" class="hover:text-amber-300 transition-colors">Kontaktai</a></li>
             </ul>
-            
-            <div class="flex items-center">
+    
+            <div class="flex items-center justify-center">
                 <img src="/img/logo-jugila.png" alt="Jugila Logo" class="h-35 w-auto" />
             </div>
-            
-            <ul class="flex flex-wrap flex-col leading-relaxed gap-1 sm:mt-0 font-medium text-sm text-right">
-                <li class="text-gray-400 hover:text-amber-300 transition-colors cursor-pointer">Alvydas Šereika</li> 
-                <li class="text-gray-400 hover:text-amber-300 transition-colors cursor-pointer">Tel.: +370687456789</li> 
-                <li class="text-gray-400 hover:text-amber-300 transition-colors cursor-pointer">Įmonės kodas: 302589534</li> 
-                <li class="text-gray-400 hover:text-amber-300 transition-colors cursor-pointer">PVM mokėtojo kodas: LT100012456412</li> 
+    
+            <ul class="flex flex-col gap-1 text-sm font-medium text-gray-400 items-center text-center sm:items-end sm:text-right">
+                <li class="hover:text-amber-300 transition-colors">Alvydas Šereika</li>
+                <li class="hover:text-amber-300 transition-colors tracking-wide">Tel.: +37069837042</li>
+                <li class="hover:text-amber-300 transition-colors">Įmonės kodas: 302589534</li>
+                <li class="hover:text-amber-300 transition-colors">PVM mokėtojo kodas: LT100012456412</li>
             </ul>
-            
     
         </div>
-    
+
         <div class="border-t border-neutral-700">
             <p class="text-center text-xs text-gray-500 py-4">
                 © 2025 <a href="/" class="hover:text-amber-300">Jugila™</a>. Visos teisės saugomos.
             </p>
         </div>
     </footer>
-
 
 </body>
 

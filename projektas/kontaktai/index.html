@@ -24,7 +24,7 @@
     <script type="module" src="/src/main.js" defer></script>
 </head>
 
-<body>
+<body class="min-h-dvh flex flex-col">
     <header>
         <nav class="fixed w-full z-20 top-0 start-0">
             <div class="w-auto flex flex-wrap items-center justify-between p-4">
@@ -102,11 +102,9 @@
         <button id="scrollTopBtn" title="Į viršų">↑</button>
     </header>
 
-    <main>
+    <main class="flex-1">
 
-        <section class="mt-35"></section>
-
-        <div class="page-header ml-5">
+        <div class="page-header ml-5 mt-35 mb-10">
             <p class="trns-text">Kontaktai</p>
             <div class="border-b-2 border-b-amber-300"></div>
         </div>        
@@ -127,14 +125,14 @@
                 </div>
 
                 <div class="about-text max-w-xl mx-auto text-left sm:text-center lg:text-left">
-                    <h2 class="text-2xl md:text-3xl font-bold mb-4 text-shadow-lg text-shadow-amber-300">
+                    <h2 class="text-2xl md:text-3xl font-bold mb-4">
                         ALVYDAS ŠEREIKA
                     </h2>
                 
                     <p class="about-lead flex items-center justify-start sm:justify-center gap-2 mb-3 text-xs sm:text-sm md:text-base">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                         stroke-width="1.5" stroke="currentColor"
-                        class="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6">
+                        class="size-6">
                             <path stroke-linecap="round" stroke-linejoin="round"
                             d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 
                             2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 
@@ -156,7 +154,7 @@
                     <p class="about-lead flex items-center justify-start sm:justify-center gap-2 mb-3 text-xs sm:text-sm md:text-base">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                         stroke-width="1.5" stroke="currentColor"
-                        class="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6">
+                        class="size-6">
                             <path stroke-linecap="round" stroke-linejoin="round"
                                 d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
                             <path stroke-linecap="round" stroke-linejoin="round"
@@ -172,12 +170,9 @@
             </div>
         </section>
 
-        <div class="mt-35"></div>
-
-
     </main>
 
-    <footer class="bg-[#1a1a1a] border-t-2 border-amber-300 mt-16">
+    <footer class="bg-[#1a1a1a] border-t-2 border-amber-300">
         <div class="w-full mx-auto px-6 py-4 flex flex-col items-center gap-4 sm:flex-row sm:justify-between sm:items-center">
     
             <ul class="flex gap-6 text-sm font-medium text-gray-400 justify-center sm:justify-start">
