@@ -66,6 +66,7 @@ a[data-dropdown-toggle="dropdownHover"]:hover svg {
 
 #scrollTopBtn:hover {
   background-color: #f5cd20;
+  color: #ffffff;
   box-shadow: 0 0 12px rgba(255, 230, 138, 0.6);
 }
 
@@ -166,9 +167,9 @@ a[data-dropdown-toggle="dropdownHover"]:hover svg {
 }
 
 /* trys skaidrės, su atidėtais startais */
-.hero .bg1 { background-image: url('/img/bg-excavator.jpg'); animation-delay: 0s;  }
-.hero .bg2 { background-image: url('/img/excavator_1.jpg');  animation-delay: 13.3s;  }
-.hero .bg3 { background-image: url('/img/excavator_2.jpg');  animation-delay: 26.6s; }
+.hero .bg1 { background-image: url('/img/hero-1.png'); animation-delay: 0s;  }
+.hero .bg2 { background-image: url('/img/hero-4.png');  animation-delay: 13.3s;  }
+.hero .bg3 { background-image: url('/img/hero-2.png');  animation-delay: 26.6s; }
 
 /* kenBurns + kryžminis išblukimas 40s ciklui */
 @keyframes kenBurns {
@@ -380,7 +381,6 @@ a[data-dropdown-toggle="dropdownHover"]:hover svg {
   box-shadow: 0 0 12px rgba(250, 204, 21, 0.5);
 }
 
-/* Nuotrauka */
 .about-image img {
   width: 100%;
   border-radius: 6px;

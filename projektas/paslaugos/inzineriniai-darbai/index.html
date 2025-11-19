@@ -24,7 +24,7 @@
     <script type="module" src="/src/main.js" defer></script>
 </head>
 
-<body>
+<body class="min-h-dvh flex flex-col">
     <header>
         <nav class="fixed w-full z-20 top-0 start-0">
             <div class="w-auto flex flex-wrap items-center justify-between p-4">
@@ -73,17 +73,19 @@
                                 class="absolute hidden group-hover:block mt-2 rounded-md w-44 z-10 bg-[rgba(17,17,17)] md:bg-[rgba(17,17,17,0.8)] backdrop-blur-[6px] shadow-[0_2px_10px_rgba(0,0,0,0.3)] border border-[rgba(255,255,255,0.08)]">
                                 <ul class="py-2 text-sm text-amber-300">
                                     <li>
-                                        <a href="/paslaugos/zemes-darbai/" class="block px-4 py-2 hover:text-white hover:bg-amber-300/15">Žemės
-                                            darbai</a>
+                                        <a href="/paslaugos/zemes-darbai/" 
+                                        class="block px-4 py-2 hover:text-white hover:bg-amber-300/15">Žemės darbai
+                                        </a>
                                     </li>
                                     <li>
                                         <a href="/paslaugos/inzineriniai-darbai/"
-                                            class="block px-4 py-2 hover:text-white hover:bg-amber-300/15">Inžineriniai
-                                            darbai</a>
+                                            class="block px-4 py-2 hover:text-white hover:bg-amber-300/15">Inžineriniai darbai
+                                        </a>
                                     </li>
                                     <li>
-                                        <a href="/paslaugos/sezonines-paslaugos/" class="block px-4 py-2 hover:text-white hover:bg-amber-300/15">Sezoninės
-                                            paslaugos</a>
+                                        <a href="/paslaugos/sezonines-paslaugos/" 
+                                        class="block px-4 py-2 hover:text-white hover:bg-amber-300/15">Sezoninės paslaugos
+                                        </a>
                                     </li>
                                 </ul>
                             </div>
@@ -100,35 +102,31 @@
         <button id="scrollTopBtn" title="Į viršų">↑</button>
     </header>
 
-    <main class="w-full my-35 text-white">
-        <div class="max-w-auto mx-5 my-10 px-4 py-20 flex flex-col gap-8 text-amber-50 hover:text-white bg-amber-900/10 rounded-lg border border-amber-300/20">
-            <a href="/paslaugos/zemes-darbai/">Žemės darbai</a>
-            <a href="/paslaugos/inzineriniai-darbai/">Inžineriniai darbai</a>
-            <a href="/paslaugos/sezonines-paslaugos/">Sezoninės paslaugos</a>
-        </div>
-
+    <main class="flex-1">
     </main>
 
-    <footer class="bg-[#1a1a1a] border-t border-amber-400 mt-16">
-        <div class="max-w-7xl mx-auto px-6 py-1 flex flex-col sm:flex-row sm:justify-between sm:items-center">
-            <ul class="flex flex-wrap items-center gap-6 sm:mt-0 text-sm font-medium">
-                <li><a href="/apie/" class="text-gray-400 hover:text-amber-300 transition-colors">Apie mus</a></li>
-                <li><a href="/paslaugos/" class="text-gray-400 hover:text-amber-300 transition-colors">Paslaugos</a></li>
-                <li><a href="/kontaktai/" class="text-gray-400 hover:text-amber-300 transition-colors">Kontaktai</a></li>
+    <footer class="bg-[#1a1a1a] border-t-2 border-amber-300 mt-16">
+        <div class="w-full mx-auto px-6 py-4 flex flex-col items-center gap-4 sm:flex-row sm:justify-between sm:items-center">
+    
+            <ul class="flex gap-6 text-sm font-medium text-gray-400 justify-center sm:justify-start">
+                <li><a href="/apie/" class="hover:text-amber-300 transition-colors">Apie mus</a></li>
+                <li><a href="/paslaugos/" class="hover:text-amber-300 transition-colors">Paslaugos</a></li>
+                <li><a href="/kontaktai/" class="hover:text-amber-300 transition-colors">Kontaktai</a></li>
             </ul>
-            
-            <div class="flex items-center">
+    
+            <div class="flex items-center justify-center">
                 <img src="/img/logo-jugila.png" alt="Jugila Logo" class="h-35 w-auto" />
             </div>
-            
-            <ul class="flex flex-wrap flex-col leading-relaxed gap-1 sm:mt-0 font-medium text-sm text-right">
-                <li class="text-gray-400 hover:text-amber-300 transition-colors cursor-pointer">Alvydas Šereika</li> 
-                <li class="text-gray-400 hover:text-amber-300 transition-colors cursor-pointer">Tel.: +370687456789</li> 
-                <li class="text-gray-400 hover:text-amber-300 transition-colors cursor-pointer">Įmonės kodas: 302589534</li> 
-                <li class="text-gray-400 hover:text-amber-300 transition-colors cursor-pointer">PVM mokėtojo kodas: LT100012456412</li> 
-            </ul>
-        </div>
     
+            <ul class="flex flex-col gap-1 text-sm font-medium text-gray-400 items-center text-center sm:items-end sm:text-right">
+                <li class="hover:text-amber-300 transition-colors">Alvydas Šereika</li>
+                <li class="hover:text-amber-300 transition-colors">Tel.: +370687456789</li>
+                <li class="hover:text-amber-300 transition-colors">Įmonės kodas: 302589534</li>
+                <li class="hover:text-amber-300 transition-colors">PVM mokėtojo kodas: LT100012456412</li>
+            </ul>
+    
+        </div>
+
         <div class="border-t border-neutral-700">
             <p class="text-center text-xs text-gray-500 py-4">
                 © 2025 <a href="/" class="hover:text-amber-300">Jugila™</a>. Visos teisės saugomos.

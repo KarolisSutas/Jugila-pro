@@ -1,21 +1,18 @@
 export function initScrollReveal() {
-    const aboutSection = document.querySelector('.about-intro');
-    if (!aboutSection) return;
+    const sections = document.querySelectorAll('.about-intro');
+    if (!sections.length) return;
 
     const observer = new IntersectionObserver(
         (entries) => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
-                    aboutSection.classList.add('in-view');
-                    // jei nenori kartotinio paleidimo — atjungi
-                    observer.unobserve(aboutSection);
+                    entry.target.classList.add('in-view');
+                    observer.unobserve(entry.target);
                 }
             });
         },
-        {
-            threshold: 0.30, // kai 25% sekcijos matosi ekrane
-        }
+        { threshold: 0.25 }
     );
 
-    observer.observe(aboutSection);
+    sections.forEach(section => observer.observe(section));
 }

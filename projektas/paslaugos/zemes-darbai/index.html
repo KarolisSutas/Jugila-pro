@@ -24,7 +24,7 @@
     <script type="module" src="/src/main.js" defer></script>
 </head>
 
-<body>
+<body class="min-h-dvh flex flex-col">
     <header>
         <nav class="fixed w-full z-20 top-0 start-0">
             <div class="w-auto flex flex-wrap items-center justify-between p-4">
@@ -73,17 +73,19 @@
                                 class="absolute hidden group-hover:block mt-2 rounded-md w-44 z-10 bg-[rgba(17,17,17)] md:bg-[rgba(17,17,17,0.8)] backdrop-blur-[6px] shadow-[0_2px_10px_rgba(0,0,0,0.3)] border border-[rgba(255,255,255,0.08)]">
                                 <ul class="py-2 text-sm text-amber-300">
                                     <li>
-                                        <a href="/paslaugos/zemes-darbai/" class="block px-4 py-2 hover:text-white hover:bg-amber-300/15">Žemės
-                                            darbai</a>
+                                        <a href="/paslaugos/zemes-darbai/" 
+                                        class="block px-4 py-2 hover:text-white hover:bg-amber-300/15">Žemės darbai
+                                        </a>
                                     </li>
                                     <li>
                                         <a href="/paslaugos/inzineriniai-darbai/"
-                                            class="block px-4 py-2 hover:text-white hover:bg-amber-300/15">Inžineriniai
-                                            darbai</a>
+                                            class="block px-4 py-2 hover:text-white hover:bg-amber-300/15">Inžineriniai darbai
+                                        </a>
                                     </li>
                                     <li>
-                                        <a href="/paslaugos/sezonines-paslaugos/" class="block px-4 py-2 hover:text-white hover:bg-amber-300/15">Sezoninės
-                                            paslaugos</a>
+                                        <a href="/paslaugos/sezonines-paslaugos/" 
+                                        class="block px-4 py-2 hover:text-white hover:bg-amber-300/15">Sezoninės paslaugos
+                                        </a>
                                     </li>
                                 </ul>
                             </div>
@@ -100,8 +102,125 @@
         <button id="scrollTopBtn" title="Į viršų">↑</button>
     </header>
 
-    <main>
+    <main class="flex-1">
+
+        <div class="page-header ml-5 mt-35">
+            <p class="trns-text">Žemės darbai</p>
+            <div class="border-b-2 border-b-amber-300"></div>
+        </div>        
+
+        <section class="about-intro">
+            <div class="about-container">
+                <div class="about-text">
+                    <h2 class="highlight">Pamatų atkasimas</h2>
+                    <p class="about-lead">
+                        Atkasame pamatus tiksliai ir saugiai, paruošdami juos rekonstrukcijai, drenažo įrengimui ar apšiltinimui. 
+                        Darbus atliekame kontroliuojant gylį, nepažeidžiant pamatų konstrukcijos ir aplinkinių komunikacijų. 
+                        Užtikriname tvarkingą iškasą, nuolydžius ir tinkamą grunto išvežimą arba paskirstymą sklype.
+                    </p>
+                    <p class="about-desc">
+                        Ši paslauga reikalinga, kai planuojamas pastato renovavimas, drenažo įrengimas, hidroizoliacijos atnaujinimas arba pamatų apšiltinimas. 
+                        Dirbame greitai ir tiksliai, kad paruošti pamatai būtų tinkami visiems tolesniems darbams.                    
+                    </p>
+                </div>
+                <div class="about-image">
+                    <img src="/img/kasimoDarbai.jpg" alt="Jugila - žemės kasimo darbai">
+                </div>
+            </div>
+        </section>
+        <section class="about-intro">
+            <div class="about-container">
+                <div class="about-image">
+                    <img src="/img/poliuGrezimas1.jpg" alt="Jugila - žemės kasimo darbai">
+                </div>
+                <div class="about-text">
+                    <h2 class="highlight">Polių gręžimas</h2>
+                    <p class="about-lead">
+                        Gręžiame polius naudojant Yanmar mini ekskavatorių, todėl darbai atliekami greitai ir tvarkingai net mažose ar privažiuoti sudėtingose vietose. 
+                        Galime išgręžti polius iki mini ekskavatoriaus leidžiamo gylio ir skersmens – tai puikiai tinka lengvesnėms konstrukcijoms, pamatų sutvirtinimui, terasoms, priestatams, stoginėms ir atraminėms sienelėms.                    
+                    </p>
+                    <p class="about-desc">
+                        Užtikriname tikslų gręžimo gylį, taisyklingą vertikalumą ir švarią šachtą betonavimui. 
+                        Tokia technologija leidžia greitai paruošti patvarią atramą konstrukcijoms, kur nereikalingas sunkios technikos pajėgumas.                    
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="about-intro">
+            <div class="about-container">
+                <div class="about-text">
+                    <h2 class="highlight">Sklypų lyginimas</h2>
+                    <p class="about-lead">
+                        Lyginame sklypus mini ekskavatoriumi, tiksliai formuojant reikiamą reljefą ir nuolydžius. 
+                        Atvežtą ar vietoje esantį gruntą paskirstome tolygiai, nuimame perteklinį sluoksnį arba pakeliame žemes, kad sklypas būtų paruoštas statyboms, infrastruktūrai ar apželdinimui.                    
+                    </p>
+                    <p class="about-desc">
+                        Mini ekskavatorius leidžia dirbti ten, kur didelė technika neprivažiuoja: siauresniuose privažiavimuose, prie pastatų, mažesniuose sklypuose. 
+                        Atliekame lyginimą po inžinerinių tinklų įrengimo, drenažo, pamatų darbų, taip pat ruošiame aikšteles automobiliams, terasoms ar mažoms konstrukcijoms.                    
+                    </p>
+                </div>
+                <div class="about-image">
+                    <img src="/img/sklypuLyginimas.jpg" alt="Jugila - žemės kasimo darbai">
+                </div>
+            </div>
+        </section>
+        <section class="about-intro">
+            <div class="about-container">
+                <div class="about-image">
+                    <img src="/img/buldozerio.jpg" alt="Jugila - žemės kasimo darbai">
+                </div>
+                <div class="about-text">
+                    <h2 class="highlight">Ratinio buldozerio paslaugos</h2>
+                    <p class="about-lead">
+                        Atliekame įvairius žemės stūmimo ir lyginimo darbus ratiniu buldozeriu. Ši technika leidžia greitai formuoti aikšteles, paskirstyti gruntą, nuimti nelygius paviršius ir paruošti sklypą statyboms ar įvažiavimams.
+                    </p> 
+                    <p class="about-desc">
+                        <ol>
+                            <p>             
+                                Ratinis buldozeris ypač tinka, kai reikia:
+                            </p>
+                            <li>- išlyginti didesnius plotus,</li>
+                            <li>- paskirstyti iškastą gruntą,</li>
+                            <li>- formuoti nuolydžius,</li>
+                            <li>- paruošti pagrindą keliukui ar aikštelei,</li>
+                            <li>- nuvalyti žemių sankaupas po kasimo darbų.</li>
+                        </ol>                  
+                    </p>
+                </div>
+            </div>
+        </section>
+
     </main>
+
+    <footer class="bg-[#1a1a1a] border-t-2 border-amber-300 mt-16">
+        <div class="w-full mx-auto px-6 py-4 flex flex-col items-center gap-4 sm:flex-row sm:justify-between sm:items-center">
+    
+            <ul class="flex gap-6 text-sm font-medium text-gray-400 justify-center sm:justify-start">
+                <li><a href="/apie/" class="hover:text-amber-300 transition-colors">Apie mus</a></li>
+                <li><a href="/paslaugos/" class="hover:text-amber-300 transition-colors">Paslaugos</a></li>
+                <li><a href="/kontaktai/" class="hover:text-amber-300 transition-colors">Kontaktai</a></li>
+            </ul>
+    
+            <div class="flex items-center justify-center">
+                <img src="/img/logo-jugila.png" alt="Jugila Logo" class="h-35 w-auto" />
+            </div>
+    
+            <ul class="flex flex-col gap-1 text-sm font-medium text-gray-400 items-center text-center sm:items-end sm:text-right">
+                <li class="hover:text-amber-300 transition-colors">Alvydas Šereika</li>
+                <li class="hover:text-amber-300 transition-colors">Tel.: +370687456789</li>
+                <li class="hover:text-amber-300 transition-colors">Įmonės kodas: 302589534</li>
+                <li class="hover:text-amber-300 transition-colors">PVM mokėtojo kodas: LT100012456412</li>
+            </ul>
+    
+        </div>
+
+        <div class="border-t border-neutral-700">
+            <p class="text-center text-xs text-gray-500 py-4">
+                © 2025 <a href="/" class="hover:text-amber-300">Jugila™</a>. Visos teisės saugomos.
+            </p>
+        </div>
+    </footer>
+
 
 </body>
 
