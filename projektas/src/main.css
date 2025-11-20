@@ -381,6 +381,12 @@ a[data-dropdown-toggle="dropdownHover"]:hover svg {
   box-shadow: 0 0 12px rgba(250, 204, 21, 0.5);
 }
 
+.about-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .about-image img {
   width: 100%;
   max-width: 550px;
@@ -434,7 +440,6 @@ a[data-dropdown-toggle="dropdownHover"]:hover svg {
   .about-image img {
     max-height: 50vh;
     max-width: 75vw;
-    justify-content: center;   
   }
   .about-btn {
     margin-top: 1rem;
