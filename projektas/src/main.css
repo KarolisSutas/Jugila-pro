@@ -433,7 +433,8 @@ a[data-dropdown-toggle="dropdownHover"]:hover svg {
   }
   .about-image img {
     max-height: 50vh;
-    max-width: 75vw;   
+    max-width: 75vw;
+    justify-content: center;   
   }
   .about-btn {
     margin-top: 1rem;
