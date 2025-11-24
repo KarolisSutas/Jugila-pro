@@ -299,9 +299,9 @@ a[data-dropdown-toggle="dropdownHover"]:hover svg {
 }
 
 /* trys skaidrės, su atidėtais startais */
-.hero .bg1 { background-image: url('/img/hero-1.png'); animation-delay: 0s;  }
-.hero .bg2 { background-image: url('/img/hero-4.png');  animation-delay: 13.3s;  }
-.hero .bg3 { background-image: url('/img/hero-2.png');  animation-delay: 26.6s; }
+.hero .bg1 { background-image: url('/img/hero-6.png'); animation-delay: 0s;  }
+.hero .bg2 { background-image: url('/img/hero-9.png');  animation-delay: 13.3s;  }
+.hero .bg3 { background-image: url('/img/hero-8.png');  animation-delay: 26.6s; }
 
 /* kenBurns + kryžminis išblukimas 40s ciklui */
 @keyframes kenBurns {
@@ -618,7 +618,7 @@ a[data-dropdown-toggle="dropdownHover"]:hover svg {
   .projects-head {
     flex-direction: column;
     align-items: flex-start;
-    gap: 0.5rem;
+    gap: 0.1rem;
   }
   .projects-all {
     align-self: flex-end;
