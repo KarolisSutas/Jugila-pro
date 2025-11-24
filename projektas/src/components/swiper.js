@@ -23,7 +23,7 @@ export function initSwiper() {
         maxCard: 350          // kortelės nebus platesnės už šitą
     };
 
-    // --- 1. breakpoint'ai (tavo logika) ---
+    // --- 1. breakpoint'ai logika ---
     function getPerView() {
         const width = window.innerWidth;
         if (width >= 1420) return 5;

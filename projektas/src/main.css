@@ -167,7 +167,6 @@ a[data-dropdown-toggle="dropdownHover"]:hover svg {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #1877f2;
   border-radius: 50%;
   background: linear-gradient(
     45deg,
@@ -213,7 +212,6 @@ a[data-dropdown-toggle="dropdownHover"]:hover svg {
     width: 34px;
     height: 34px;
     padding: 0.25rem;
-    ring-width: 1px; /* plonesnis apvadas */
   }
 
   /* BURGERIO ikonos dydis */
@@ -229,12 +227,9 @@ a[data-dropdown-toggle="dropdownHover"]:hover svg {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
   }
-
-  .fb {
-    font-size: 14px;
-  }
-
 }
+
+/* ====== HERO SEKCIJA ====== */
 
 .hero {
   position: relative;
@@ -242,6 +237,11 @@ a[data-dropdown-toggle="dropdownHover"]:hover svg {
   overflow: hidden;
   min-height: 100svh;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 clamp(1.25rem, 3vw, 4rem);
+  color: #fff;
 }
 
 /* tekstas virš overlay */
@@ -264,7 +264,7 @@ a[data-dropdown-toggle="dropdownHover"]:hover svg {
     rgba(0,0,0,.22);
 }
 
-/* apačios perėjimas į body spalvą (be blur) */
+/* apačios perėjimas į body spalvą */
 .hero::after {
   content: "";
   position: absolute; left: 0; right: 0; bottom: -1px;
@@ -315,15 +315,6 @@ a[data-dropdown-toggle="dropdownHover"]:hover svg {
 }
 
 /* ====== HERO TURINYS IR ANIMACIJOS ====== */
-
-.hero {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  min-height: 100svh;
-  padding: 0 clamp(1.25rem, 3vw, 4rem);
-  color: #fff;
-}
 
 .hero-content {
   max-width: 800px;
@@ -381,8 +372,6 @@ a[data-dropdown-toggle="dropdownHover"]:hover svg {
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: .02em;
-  transition: background .25s ease;
-  font-weight: 600;
   transition: all 0.3s ease;
 }
 
@@ -393,13 +382,6 @@ a[data-dropdown-toggle="dropdownHover"]:hover svg {
 
 .highlight {
   color: #f5cd13;
-}
-
-@keyframes fadeUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 /* scroll hint apačioje */
@@ -434,7 +416,6 @@ a[data-dropdown-toggle="dropdownHover"]:hover svg {
   100% { transform: translateY(0); opacity: .4; }
 }
 
-/* responsive smulkūs pataisymai */
 @media (max-width: 768px) {
   .hero {
     justify-content: center;
@@ -450,7 +431,7 @@ a[data-dropdown-toggle="dropdownHover"]:hover svg {
 
 /* ===== ABOUT INTRO SEKCIJA ===== */
 .about-intro {
-  background: oklch(0.27 0 0); /* tamsus fonas, kaip visur */
+  background: oklch(0.27 0 0);
   color: #f5f5f5;
   padding: clamp(4rem, 6vw, 6rem) 1.5rem;
   display: flex;
@@ -465,7 +446,6 @@ a[data-dropdown-toggle="dropdownHover"]:hover svg {
   align-items: center;
 }
 
-/* Tekstas */
 .about-text h2 {
   font-size: clamp(1.8rem, 4vw, 2.5rem);
   font-weight: 800;
@@ -525,7 +505,7 @@ a[data-dropdown-toggle="dropdownHover"]:hover svg {
   object-fit: cover;
 }
 
-/* ===== ANIMACIJOS KAIP HERO ===== */
+/* ===== ABOUT/HERO ANIMACIJOS ===== */
 @keyframes fadeUp {
   to {
     opacity: 1;
@@ -578,11 +558,9 @@ a[data-dropdown-toggle="dropdownHover"]:hover svg {
 .projects-section {
   color: #fff;
   padding-bottom: 4rem;
-  /* nebedarom 100vw ir margin-left: calc(50% - 50vw); 
-     tegul seka normaliu puslapio pločiu */
 }
 
-/* viršus (TITLE + link) – siauras kaip ir buvo */
+/* viršus (TITLE + link) */
 .projects-head {
   display: flex;
   justify-content: space-between;
@@ -731,7 +709,7 @@ a[data-dropdown-toggle="dropdownHover"]:hover svg {
   margin-bottom: 0.75rem;
 }
 
-/* Rodyklė (Level10 stilius) */
+/* Rodyklė */
 .project-meta .arrow-btn {
   position: absolute;
   bottom: 1rem;
@@ -753,7 +731,6 @@ a[data-dropdown-toggle="dropdownHover"]:hover svg {
   color: #facc13ee;
 }
 
-/* --- Hover efektas --- */
 .project-card:hover img {
   transform: scale(1.05);
   filter: brightness(0.85);
@@ -819,7 +796,6 @@ a[data-dropdown-toggle="dropdownHover"]:hover svg {
   width: 26px;
 }
 
-/* šiek tiek daugiau oro didesniuose ekranuose */
 @media (min-width: 768px) {
   .projects-slider {
     padding: 0 16px;
@@ -901,14 +877,14 @@ a[data-dropdown-toggle="dropdownHover"]:hover svg {
   }
 }
 
+/* TRANSPARENT teksto responsyvūs šriftai */
+
 @media (max-width: 580px) {
   .trns-text {
     font-size: 40px;
   }
   .toptext {
     font-size: 18px;
-  }
-  .projects-all {
   }
 }
 @media (max-width: 475px) {
@@ -922,8 +898,5 @@ a[data-dropdown-toggle="dropdownHover"]:hover svg {
     font-size: 12px;
   }
 }
-
-/* ===== APIE MUS PUSLAPIS ===== */
-
 
 
