@@ -208,10 +208,6 @@ a[data-dropdown-toggle="dropdownHover"]:hover svg {
     margin-right: 5px;
   }
 
-  .fb {
-    display: none;
-  }
-
   /* BURGERIO mygtukas */
   button[data-collapse-toggle="navbar-sticky"] {
     width: 34px;
