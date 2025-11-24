@@ -843,7 +843,7 @@ a[data-dropdown-toggle="dropdownHover"]:hover svg {
   -webkit-text-stroke: 1px #f9fafb;
   
   display:block;
-  font-size: 100px;
+  font-size: 80px;
   font-family: arial;
   text-align: left;
   margin-top: -20px;
@@ -883,28 +883,39 @@ a[data-dropdown-toggle="dropdownHover"]:hover svg {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 890px) {
   .trns-text {
-    font-size: 70px;
+    font-size: 60px;
   }
   .projects-all {
     font-size: 14px;
   }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 700px) {
   .trns-text {
     font-size: 50px;
     margin-top: -10px;
   }
   .toptext {
-    font-size: 24px;
+    font-size: 20px;
   }
   .projects-all {
     font-size: 13px;
   }
 }
-@media (max-width: 400px) {
+
+@media (max-width: 580px) {
+  .trns-text {
+    font-size: 40px;
+  }
+  .toptext {
+    font-size: 18px;
+  }
+  .projects-all {
+  }
+}
+@media (max-width: 475px) {
   .trns-text {
     font-size: 30px;
   }
