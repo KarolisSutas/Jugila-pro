@@ -190,7 +190,7 @@ a[data-dropdown-toggle="dropdownHover"]:hover svg {
 }
 
 @media (max-width: 768px) {
-  nav {
+  nav:hover {
     background-color: rgba(17, 17, 17, 0.50) !important;
     backdrop-filter: blur(6px) !important;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3) !important;
@@ -295,9 +295,9 @@ a[data-dropdown-toggle="dropdownHover"]:hover svg {
 }
 
 /* trys skaidrės, su atidėtais startais */
-.hero .bg1 { background-image: url('/img/hero-6.png'); animation-delay: 0s;  }
-.hero .bg2 { background-image: url('/img/hero-2.png');  animation-delay: 13.3s;  }
-.hero .bg3 { background-image: url('/img/hero-1.png');  animation-delay: 26.6s; }
+.hero .bg1 { background-image: url('/img/hero-1.png'); animation-delay: 0s;  }
+.hero .bg2 { background-image: url('/img/hero-6.png');  animation-delay: 13.3s;  }
+.hero .bg3 { background-image: url('/img/hero-2.png');  animation-delay: 26.6s; }
 
 /* kenBurns + kryžminis išblukimas 40s ciklui */
 @keyframes kenBurns {
