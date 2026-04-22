@@ -1,13 +1,15 @@
 @import "tailwindcss";
 
 
-* {
-  box-sizing: border-box;
-}
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
 
-body {
-  background: oklch(0.27 0 0);
-  min-height: 100vh;
+  body {
+    background: oklch(0.27 0 0);
+    min-height: 100vh;
+  }
 }
 
 /* ====== NAV STILIAI ====== */
@@ -32,12 +34,6 @@ nav.visible {
 nav.hidden {
   transform: translateY(-100%);
 }
-
-a[data-dropdown-toggle="dropdownHover"]:hover svg {
-  transform: rotate(180deg);
-  transition: transform 0.5s ease;
-}
-
 
 /* SCROLL TO TOP mygtukas */
 #scrollTopBtn {

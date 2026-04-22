@@ -3,7 +3,7 @@
 export function initNavbar() {
     const nav = document.querySelector('nav');
     const scrollBtn = document.getElementById('scrollTopBtn');
-    const menuToggleBtn = document.querySelector('[data-collapse-toggle="navbar-sticky"]');
+    const menuToggleBtn = document.getElementById('navbar-toggle-btn');
     const menu = document.getElementById('navbar-sticky');
 
     let lastScrollTop = 0;
@@ -47,7 +47,7 @@ export function initNavbar() {
         });
     }
 
-    // MOBILUS MENIU (tavo HTML jau turi data-collapse-toggle)
+    // MOBILUS MENIU
     if (menuToggleBtn && menu) {
         menuToggleBtn.addEventListener('click', () => {
             menu.classList.toggle('hidden');
