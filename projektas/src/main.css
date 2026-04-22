@@ -282,7 +282,8 @@ a[data-dropdown-toggle="dropdownHover"]:hover svg {
 
 /* --- Fono sluoksniai ir animacijos --- */
 .hero .bg {
-  position: absolute; inset: 0;
+  position: absolute; 
+  inset: 0;
   z-index: 0;
   background-size: cover;
   background-position: center;
