@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preload" href="/img/hero-1.avif" as="image" fetchpriority="high">
 
     <title>Jugila – žemės kasimo darbai Utenoje</title>
     <meta name="description"
@@ -139,9 +140,18 @@
     <main class="w-full text-white flex-1 mb-20">
 
         <section class="hero">
-            <span class="bg bg1" aria-hidden="true"></span>
-            <span class="bg bg2" aria-hidden="true"></span>
-            <span class="bg bg3" aria-hidden="true"></span>
+            <picture class="bg bg1" aria-hidden="true">
+                <source srcset="/img/hero-1.avif" type="image/avif">
+                <img src="/img/hero-1.webp" alt="Ekskavatoriaus grąžtas iš arti" fetchpriority="high" decoding="async" width="1200" height="1600">
+            </picture>
+            <picture class="bg bg2" aria-hidden="true">
+                <source srcset="/img/hero-6.avif" type="image/avif">
+                <img src="/img/hero-6.webp" alt="Ekskavatoriaus kaušas iš arti" decoding="async" loading="lazy" width="1200" height="1600">
+            </picture>
+            <picture class="bg bg3" aria-hidden="true">
+                <source srcset="/img/hero-2.avif" type="image/avif">
+                <img src="/img/hero-2.webp" alt="ekskavatoriaus šonas iš arti" decoding="async" loading="lazy" width="1200" height="1600">
+            </picture>
 
             <div class="hero-content">
                 <span class="hero-eyebrow">Mes tikime kokybe</span>
