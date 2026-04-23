@@ -118,6 +118,7 @@ export function initSwiper() {
 
         for (let i = 0; i < state.realCount; i++) {
             const dot = document.createElement('button');
+            dot.setAttribute('aria-label', `Projektas ${i + 1}`);
             if (i === 0) dot.classList.add('is-active');
             dot.addEventListener('click', () => {
                 goToReal(i);
