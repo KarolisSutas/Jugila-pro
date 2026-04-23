@@ -68,7 +68,7 @@
                     </div>
                     
                     <a href="/kontaktai/" class="btn-contact">Susisiekime</a>
-                    <button data-collapse-toggle="navbar-sticky" type="button"
+                    <button id="navbar-toggle-btn" type="button"
                         class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-amber-300 rounded-lg md:hidden focus:outline-none ring-2 ring-amber-300 cursor-pointer"
                         aria-controls="navbar-sticky" aria-expanded="false">
                         <span class="sr-only">Open main menu</span>
@@ -92,39 +92,39 @@
                                 class="block py-2 px-3 text-amber-300 hover:text-white md:hover:border-b md:hover:bg-transparent md:hover:text-white md:p-0">Apie
                                 mus</a>
                         </li>
-                        <li>
-                            <a href="/paslaugos/" id="dropdownHoverButton" 
-                            data-dropdown-toggle="dropdownHover" 
-                            data-dropdown-trigger="hover" 
+                        <li class="relative group">
+                            <a href="/paslaugos/" id="dropdownHoverButton"  
                             class="flex justify-center items-center py-2 px-3 text-amber-300 hover:text-white md:hover:border-b md:hover:bg-transparent md:hover:text-white md:p-0">
                                 Paslaugos
-                                <svg class="w-2.5 h-2.5 ms-1 transition-transform duration-200" aria-hidden="true"
+                                <svg class="w-2.5 h-2.5 ms-1 transition-transform duration-200 md:group-hover:rotate-180" aria-hidden="true"
                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
                                 </svg>
                             </a>
-
+                        
                             <div id="dropdownHover"
-                                class="absolute hidden group-hover:block mt-2 rounded-md w-44 z-10 bg-[rgba(17,17,17)] md:bg-[rgba(17,17,17,0.8)] backdrop-blur-[6px] shadow-[0_2px_10px_rgba(0,0,0,0.3)] border border-[rgba(255,255,255,0.08)]">
-                                <ul class="py-2 text-sm text-amber-300">
-                                    <li>
-                                        <a href="/paslaugos/zemes-darbai/" 
-                                        class="block px-4 py-2 hover:text-white hover:bg-amber-300/15">Žemės darbai
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/paslaugos/inzineriniai-darbai/"
-                                            class="block px-4 py-2 hover:text-white hover:bg-amber-300/15">Inžineriniai darbai
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/paslaugos/sezonines-paslaugos/" 
-                                        class="block px-4 py-2 hover:text-white hover:bg-amber-300/15">Sezoninės paslaugos
-                                        </a>
-                                    </li>
-                                </ul>
+                                class="hidden md:absolute md:group-hover:block md:top-full md:left-0 md:pt-2 z-10">
+                                <div class="md:rounded-md md:w-44 md:bg-[rgba(17,17,17,0.8)] md:backdrop-blur-[6px] md:shadow-[0_2px_10px_rgba(0,0,0,0.3)] md:border md:border-[rgba(255,255,255,0.08)]">
+                                    <ul class="py-0 text-sm text-amber-300 pl-4 md:pl-0">
+                                        <li>
+                                            <a href="/paslaugos/zemes-darbai/" 
+                                            class="block px-4 py-2 hover:text-white ">Žemės darbai
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/paslaugos/inzineriniai-darbai/"
+                                                class="block px-4 py-2 hover:text-white">Inžineriniai darbai
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/paslaugos/sezonines-paslaugos/" 
+                                            class="block px-4 py-2 hover:text-white">Sezoninės paslaugos
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-
+                        
                         </li>
                         <li>
                             <a href="/kontaktai/"
