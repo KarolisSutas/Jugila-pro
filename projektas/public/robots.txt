@@ -1,0 +1,13 @@
+# robots.txt — www.jugila.lt
+# Nurodymai paieškos robotams (Google, Bing, ir kt.)
+
+User-agent: *
+Allow: /
+
+# Uždrausti serviceinius/administracinius katalogus
+Disallow: /admin/
+Disallow: /test/
+Disallow: /backup/
+
+# Sitemap lokacija
+Sitemap: https://www.jugila.lt/sitemap.xml
