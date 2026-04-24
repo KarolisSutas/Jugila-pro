@@ -9,5 +9,10 @@ Disallow: /admin/
 Disallow: /test/
 Disallow: /backup/
 
+# Uždrausti development katalogus (proaktyvi apsauga)
+Disallow: /node_modules/
+Disallow: /src/
+Disallow: /.git/
+
 # Sitemap lokacija
 Sitemap: https://www.jugila.lt/sitemap.xml
