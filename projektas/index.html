@@ -25,6 +25,69 @@
     <meta property="og:locale" content="lt_LT">
     
     <script type="module" src="/src/main.js"></script>
+    <script type="application/ld+json">
+        {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+            "@type": "Contractor",
+            "@id": "https://www.jugila.lt/#organization",
+            "name": "UAB Jugila",
+            "legalName": "Jugila, UAB",
+            "url": "https://www.jugila.lt/",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://www.jugila.lt/img/logo-jugila.webp",
+                "width": 800,
+                "height": 800
+            },
+            "image": "https://www.jugila.lt/img/jugila-og-1200x630.webp",
+            "description": "UAB Jugila – žemės darbų ir inžinerinių tinklų įrengimo įmonė Utenoje. 30 metų sukaupta patirtis, darbai su modernia Yanmar SV26 technika visoje Utenos apskrityje.",
+            "telephone": "+37069837042",
+            "email": "jugilatech@gmail.com",
+            "foundingDate": "2021-03",
+            "openingHoursSpecification": [
+                {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                "opens": "08:00",
+                "closes": "17:00"
+                }
+            ],
+            "areaServed": [
+                { "@type": "AdministrativeArea", "name": "Utenos apskritis" },
+                { "@type": "City", "name": "Utena" },
+                { "@type": "City", "name": "Anykščiai" },
+                { "@type": "City", "name": "Molėtai" },
+                { "@type": "City", "name": "Zarasai" },
+                { "@type": "City", "name": "Ignalina" },
+                { "@type": "City", "name": "Visaginas" }
+            ],
+            "sameAs": [
+                "https://www.facebook.com/profile.php?id=100069744103730"
+            ]
+            },
+            {
+            "@type": "WebSite",
+            "@id": "https://www.jugila.lt/#website",
+            "url": "https://www.jugila.lt/",
+            "name": "Jugila",
+            "inLanguage": "lt-LT",
+            "publisher": { "@id": "https://www.jugila.lt/#organization" }
+            },
+            {
+            "@type": "WebPage",
+            "@id": "https://www.jugila.lt/#webpage",
+            "url": "https://www.jugila.lt/",
+            "name": "Jugila – žemės kasimo darbai Utenoje",
+            "description": "„Jugila“ - žemės kasimo, sklypų lyginimo, drenažo klojimo ir inžinerinių tinklų darbai Utenos apskrityje. 30 metų patirtis, moderni technika, tikslumas.",
+            "inLanguage": "lt-LT",
+            "isPartOf": { "@id": "https://www.jugila.lt/#website" },
+            "about": { "@id": "https://www.jugila.lt/#organization" }
+            }
+            ]
+        }
+        </script>
 </head>
 
 <body class="min-h-dvh flex flex-col">
